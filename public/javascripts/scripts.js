@@ -87,16 +87,17 @@ $(document).ready(function(){
 			nav:false,
 			loop:false,
 			dots:false,
-			center:false,
 			autoplay:false,
 			responsive: {
 				0: {
 					items:1,
 					margin:10,
+					center:true,
 					stagePadding: 10
 				},
 				640: {
 					items:4,
+					center:false,
 					margin:0
 				}
 			}
@@ -108,10 +109,12 @@ $(document).ready(function(){
 			responsive: {
 				0: {
 					nav:false,
+					center:true,
 					items:1
 				},
 				640: {
 					nav:true,
+					center:false,
 					items:3
 				}
 			}
@@ -123,10 +126,12 @@ $(document).ready(function(){
 			items:1,
 			responsive: {
 				0: {
-					nav:false
+					nav:false,
+					center:true
 				},
 				640: {
-					nav:true
+					nav:true,
+					center:false
 				}
 			}
 		});

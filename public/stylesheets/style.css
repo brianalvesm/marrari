@@ -61,7 +61,9 @@
     margin-left: -105px;
     background-image: url("../images/ornament-sec-testimonials.png"); }
 
-* {
+*,
+*:before,
+*:after {
   background-repeat: no-repeat; }
 
 body, html {
@@ -99,7 +101,7 @@ a:hover {
   align-items: center; }
   .flex-align-center.fullHeight, .fullHeight.flex-wrap, .sec--numbers .flex-wrap article.fullHeight, .sec--benefits .fullHeight.card, .sec--sustainability .flex-wrap article.fullHeight, .site-header .fullHeight.inner-wrap, .site-header .fullHeight.follow-us, .footer .fullHeight.inner-wrap, .footer .fullHeight.follow-us, .owl-carousel.owl-theme.owl-solutions .fullHeight.slide, .fullHeight.search-bar, .search-bar form.fullHeight {
     height: 100%; }
-  @media only screen and (max-width: 30rem) {
+  @media only screen and (max-width: 40rem) {
     .flex-align-center, .flex-wrap, .sec--numbers .flex-wrap article, .sec--benefits .card, .sec--sustainability .flex-wrap article, .site-header .inner-wrap, .site-header .follow-us, .footer .inner-wrap, .footer .follow-us, .owl-carousel.owl-theme.owl-solutions .slide, .search-bar, .search-bar form {
       flex-direction: column; } }
 
@@ -110,7 +112,11 @@ a:hover {
 .sec-title {
   font-family: 'gotham-black';
   font-size: 28px;
-  color: #2D538A; }
+  color: #2D538A;
+  align-self: baseline; }
+
+.sec-title-description {
+  align-self: baseline; }
 
 .margin-right {
   margin-right: 30px; }
@@ -127,18 +133,16 @@ a:hover {
     font-family: 'gotham-black';
     font-size: 40px;
     line-height: 1; }
-  @media only screen and (max-width: 40rem) {
-    .sec--hero {
-      padding-top: 80px; }
-      .sec--hero .hero-title {
-        margin-top: 100px; } }
-  @media only screen and (max-width: 30rem) {
-    .sec--hero .hero-title {
-      font-size: 30px; } }
   .sec--hero .hero-subtitle {
     font-size: 20px; }
   .sec--hero a.btn-primary {
     margin: 50px 0 100px; }
+  @media only screen and (max-width: 40rem) {
+    .sec--hero {
+      padding-top: 80px; }
+      .sec--hero .hero-title {
+        margin-top: 100px;
+        font-size: 30px; } }
 
 .sec--clients {
   padding: 75px 0;
@@ -183,8 +187,7 @@ a:hover {
     bottom: -57px; }
   @media only screen and (max-width: 40rem) {
     .sec--ad .yellow-bar {
-      width: 100%; } }
-  @media only screen and (max-width: 30rem) {
+      width: 100%; }
     .sec--ad .ad-headline {
       font-size: 27px; }
       .sec--ad .ad-headline span {
@@ -212,9 +215,7 @@ a:hover {
   @media only screen and (max-width: 40rem) {
     .sec--numbers .flex-wrap article {
       width: 40%;
-      margin: 30px 5px; } }
-  @media only screen and (max-width: 30rem) {
-    .sec--numbers .flex-wrap article {
+      margin: 30px 5px;
       width: 100%;
       flex-direction: row; } }
 
@@ -256,7 +257,7 @@ a:hover {
         margin-left: -53px; }
     .sec--benefits .card p {
       font-size: 14px; }
-  @media only screen and (max-width: 30rem) {
+  @media only screen and (max-width: 40rem) {
     .sec--benefits .card {
       width: initial; } }
 
@@ -309,13 +310,18 @@ a:hover {
       line-height: 1;
       display: block;
       max-width: 200px; }
-  .sec--umilab .flex-wrap {
+  .sec--umilab .umilab-features {
     padding: 70px 0 80px; }
-  @media only screen and (max-width: 30rem) {
-    .sec--umilab .umilab-articles {
-      width: 100%;
-      margin-bottom: 20px;
-      flex-direction: row; } }
+  .sec--umilab .umilab-articles {
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: row; }
+  @media only screen and (max-width: 40rem) {
+    .sec--umilab .flex-align-center, .sec--umilab .flex-wrap, .sec--umilab .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--umilab article, .sec--umilab .sec--benefits .card, .sec--benefits .sec--umilab .card, .sec--umilab .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--umilab article, .sec--umilab .site-header .inner-wrap, .site-header .sec--umilab .inner-wrap, .sec--umilab .site-header .follow-us, .site-header .sec--umilab .follow-us, .sec--umilab .footer .inner-wrap, .footer .sec--umilab .inner-wrap, .sec--umilab .footer .follow-us, .footer .sec--umilab .follow-us, .sec--umilab .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--umilab .slide, .sec--umilab .search-bar, .sec--umilab .search-bar form, .search-bar .sec--umilab form {
+      width: 100%; }
+    .sec--umilab .umilab-logo {
+      align-self: baseline;
+      margin-top: 20px; } }
 
 .sec--cursos {
   background-color: #2D538A;
@@ -329,8 +335,9 @@ a:hover {
     margin-bottom: 17px;
     border-radius: 5px;
     flex-direction: row; }
-    .sec--cursos .card img {
-      margin-right: 30px; }
+    .sec--cursos .card figure {
+      margin-right: 30px;
+      border-radius: 5px; }
     .sec--cursos .card span {
       font-size: 14px;
       font-family: 'gotham-medium';
@@ -349,12 +356,22 @@ a:hover {
     margin-bottom: 20px;
     font-family: 'gotham-book';
     font-size: 18px; }
-  @media only screen and (max-width: 30rem) {
+  @media only screen and (max-width: 40rem) {
+    .sec--cursos .large-6:last-child {
+      margin-top: 50px; }
     .sec--cursos .card {
       flex-direction: column; }
-      .sec--cursos .card img {
-        margin: auto;
-        width: 100%; }
+      .sec--cursos .card figure {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-right: initial;
+        position: relative; }
+        .sec--cursos .card figure img {
+          margin: auto;
+          width: 100%;
+          position: relative;
+          top: -50%; }
       .sec--cursos .card div {
         margin-top: 20px; }
       .sec--cursos .card .card-title {
@@ -374,6 +391,9 @@ a:hover {
     font-family: 'gotham-bold';
     display: block;
     margin: 30px 0 20px; }
+  @media only screen and (max-width: 40rem) {
+    .sec--blog .flex-align-center, .sec--blog .flex-wrap, .sec--blog .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--blog article, .sec--blog .sec--benefits .card, .sec--benefits .sec--blog .card, .sec--blog .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--blog article, .sec--blog .site-header .inner-wrap, .site-header .sec--blog .inner-wrap, .sec--blog .site-header .follow-us, .site-header .sec--blog .follow-us, .sec--blog .footer .inner-wrap, .footer .sec--blog .inner-wrap, .sec--blog .footer .follow-us, .footer .sec--blog .follow-us, .sec--blog .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--blog .slide, .sec--blog .search-bar, .sec--blog .search-bar form, .search-bar .sec--blog form {
+      width: 100%; } }
 
 .sec--testimonials {
   background-color: #f4f4f4;
@@ -467,6 +487,8 @@ a:hover {
         width: auto; }
       .sec--contact .padding-0-mobile {
         padding: 0; }
+      .sec--contact .flex-wrap {
+        margin-top: 20px; }
       .sec--contact .card {
         padding: 60px 20px 130px;
         border-radius: 0; }
@@ -513,6 +535,12 @@ a:hover {
         margin: 6px; }
     .sec--newsletter .flex-align-center, .sec--newsletter .flex-wrap, .sec--newsletter .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--newsletter article, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .footer .inner-wrap, .footer .sec--newsletter .inner-wrap, .sec--newsletter .footer .follow-us, .footer .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form {
       flex-wrap: wrap; } }
+
+@media only screen and (max-width: 40rem) {
+  .sec {
+    padding: 80px 0 !important; }
+    .sec--newsletter {
+      padding: 40px 0 !important; } }
 
 @font-face {
   font-family: 'gotham-black';
@@ -577,7 +605,7 @@ a:hover {
   color: white;
   position: fixed;
   width: 100%;
-  z-index: 99; }
+  z-index: 9; }
   .site-header .inner-wrap {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -674,7 +702,8 @@ a:hover {
       .site-header .main-navigation {
         font-weight: 300;
         display: block;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
         max-height: 0;
         width: 100%;
         clear: both;
@@ -685,7 +714,7 @@ a:hover {
         -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
         transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1); }
         .site-header .main-navigation.active {
-          max-height: 1000px;
+          max-height: 2000px;
           -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
           -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
           -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -728,8 +757,7 @@ a:hover {
             max-width: 40px; } }
   @media only screen and (max-width: 40rem) {
     .site-header .login-language-wrap #arrow_down {
-      margin: 20px; } }
-  @media only screen and (max-width: 30rem) {
+      margin: 20px; }
     .site-header .main-navigation a.main-nav-links {
       font-size: 20px; }
     .site-header .main-navigation .login span {
@@ -770,6 +798,9 @@ a:hover {
     font-size: 18px;
     font-family: 'gotham-black';
     margin-left: 20px; }
+  @media only screen and (max-width: 40rem) {
+    .footer {
+      padding: 25px 0; } }
 
 .footer-copyright {
   background-color: #E1E1E1;
@@ -818,8 +849,8 @@ a.btn-primary {
       .owl-hero .item .cell {
         justify-content: flex-start; } }
 
-.owl-carousel .owl-item img {
-  width: auto !important; }
+.owl-carousel.owl-theme .owl-item img {
+  width: auto; }
 
 .owl-carousel.owl-theme {
   position: relative; }
@@ -946,11 +977,14 @@ a.btn-primary {
         transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1); }
       @media only screen and (max-width: 40rem) {
         .owl-carousel.owl-theme.owl-solutions .slide {
-          width: initial; } }
+          width: 100%; } }
   .owl-carousel.owl-theme.owl-blog .owl-nav [class*=owl-]:first-child, .owl-carousel.owl-theme.owl-testimonials .owl-nav [class*=owl-]:first-child {
     left: -60px; }
   .owl-carousel.owl-theme.owl-blog .owl-nav [class*=owl-]:last-child, .owl-carousel.owl-theme.owl-testimonials .owl-nav [class*=owl-]:last-child {
     right: -60px; }
+  @media only screen and (max-width: 40rem) {
+    .owl-carousel.owl-theme.owl-blog figure img {
+      width: 100%; } }
   .owl-carousel.owl-theme.owl-testimonials img {
     width: 180px;
     height: 180px;
@@ -959,32 +993,32 @@ a.btn-primary {
       .owl-carousel.owl-theme.owl-testimonials img {
         margin: 0 35px 35px 0; } }
 
-.slide-solucoes--1 {
-  background-image: url("../images/solucoes-slide-1.png"); }
+.slide-solucoes {
+  background-size: cover; }
+  .slide-solucoes--1 {
+    background-image: url("../images/solucoes-slide-1.png"); }
+  .slide-solucoes--2 {
+    background-image: url("../images/solucoes-slide-2.png"); }
+  .slide-solucoes--3 {
+    background-image: url("../images/solucoes-slide-3.png"); }
 
-.slide-solucoes--2 {
-  background-image: url("../images/solucoes-slide-2.png"); }
+.slide-industria {
+  background-size: cover; }
+  .slide-industria--1 {
+    background-image: url("../images/industria-slide-1.png"); }
+  .slide-industria--2 {
+    background-image: url("../images/industria-slide-2.png"); }
+  .slide-industria--3 {
+    background-image: url("../images/industria-slide-3.png"); }
 
-.slide-solucoes--3 {
-  background-image: url("../images/solucoes-slide-3.png"); }
-
-.slide-industria--1 {
-  background-image: url("../images/industria-slide-1.png"); }
-
-.slide-industria--2 {
-  background-image: url("../images/industria-slide-2.png"); }
-
-.slide-industria--3 {
-  background-image: url("../images/industria-slide-3.png"); }
-
-.slide-aplicacao--1 {
-  background-image: url("../images/aplicacao-slide-1.png"); }
-
-.slide-aplicacao--2 {
-  background-image: url("../images/aplicacao-slide-2.png"); }
-
-.slide-aplicacao--3 {
-  background-image: url("../images/aplicacao-slide-3.png"); }
+.slide-aplicacao {
+  background-size: cover; }
+  .slide-aplicacao--1 {
+    background-image: url("../images/aplicacao-slide-1.png"); }
+  .slide-aplicacao--2 {
+    background-image: url("../images/aplicacao-slide-2.png"); }
+  .slide-aplicacao--3 {
+    background-image: url("../images/aplicacao-slide-3.png"); }
 
 .search-bar {
   background-color: #002942;
@@ -1030,12 +1064,8 @@ a.btn-primary {
       flex-direction: column; }
       .search-bar form {
         width: 100%;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        flex-direction: column; }
         .search-bar form select {
           margin: 5px;
-          width: 45%; } }
-  @media only screen and (max-width: 30rem) {
-    .search-bar form {
-      flex-direction: column; }
-      .search-bar form select {
-        width: 100%; } }
+          width: 100%; } }
