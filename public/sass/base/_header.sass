@@ -101,14 +101,21 @@
 		.main-navigation
 			font-weight: 300
 			display: none
-			overflow-x: hidden
-			overflow-y: scroll
 			width: 100%
-			clear: both
 			background-color: $light-yellow
 			@include transition(400ms)
 			&.active
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				z-index: 130
 				display: block
+				overflow: auto
+				min-height: 88vh
+				margin-top: 80px
+
 				@include transition(400ms)
 			a.main-nav-links
 				border-bottom: 1px solid white
