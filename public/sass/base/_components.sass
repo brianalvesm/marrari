@@ -1,0 +1,188 @@
+// Buttons
+.btn-primary,
+a.btn-primary
+	color: $dark-blue
+	background-color: $yellow
+	border-radius: 5px
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+	display: inline-block
+	padding: 26px 60px
+	text-transform: uppercase
+	font-family: 'gotham-black'
+
+// Carousel
+.owl-hero .item
+	background-position: center
+	&--1
+		background-image: url('../images/hero-bg.png')
+	&--2
+		background-image: url('https://via.placeholder.com/1900x785')
+	&--3
+		background-image: url('https://via.placeholder.com/1900x785/222')
+	.cell
+		color: white
+		font-family: 'gotham-black'
+		min-height: 700px
+		display: flex
+		align-items: baseline
+		justify-content: center
+		flex-wrap: nowrap
+		flex-direction: column
+		@media only screen and (max-width: 40rem)
+			justify-content: flex-start
+
+.owl-carousel .owl-item img
+	width: auto !important
+
+.owl-carousel.owl-theme
+	position: relative
+	.owl-dots button.owl-dot
+		position: relative
+		top: 15px
+		span
+			background: transparent
+			border: 1px solid $blue
+			width: 19px
+			height: 19px
+		&.active span
+			background: $yellow
+			border: $yellow
+	// .owl-stage
+	// 	@extend .flex-align-center
+	.owl-nav
+		margin-top: 0
+		position: absolute
+		top: calc(50% - 25px)
+		width: 100%
+		[class*=owl-]
+			color: $dark-blue
+			background-color: $yellow
+			width: 40px
+			height: 40px
+			border-radius: 20px
+			box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+			position: absolute
+			&:first-child
+				left: 60px
+			&:last-child
+				right: 60px
+			span
+				font-size: 30px
+				line-height: 1
+				position: relative
+				top: -2px
+	&.owl-hero
+		.owl-dots .owl-dot
+			position: relative
+			top: -60px
+			span
+				border: 1px solid #E6E5E5
+	&.owl-clients
+		.owl-item img
+			max-width: max-content
+			margin: 0 auto
+	&.owl-solutions
+		position: relative
+		.owl-dots .owl-dot span
+			border: 1px solid #E6E5E5
+		.owl-nav
+			margin-top: 0
+			position: absolute
+			top: calc(50% - 25px)
+			width: 100%
+			[class*=owl-]
+				color: $dark-blue
+				background-color: $yellow
+				width: 40px
+				height: 40px
+				border-radius: 20px
+				box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+				position: absolute
+				&:first-child
+					left: -60px
+				&:last-child
+					right: -60px
+				span
+					color: $blue
+					font-size: 30px
+					line-height: 1
+					position: relative
+					top: -2px
+	&.owl-blog,
+	&.owl-testimonials
+		.owl-nav
+			[class*=owl-]
+				&:first-child
+					left: -60px
+				&:last-child
+					right: -60px
+	&.owl-testimonials img
+		width: 180px
+		height: 180px
+		margin-right: 70px
+		@media only screen and (max-width: 40rem)
+			margin: 0 35px 35px 0
+
+// Search bar
+.search-bar
+	background-color: $dark-blue
+	padding: 30px 40px
+	@extend .flex-align-center
+	justify-content: space-around
+	position: relative
+	top: -145px
+	width: 80%
+	height: 135px
+	margin: auto
+	box-shadow: 0 16px 16px rgba(0,0,0,0.14)
+	div
+		color: white
+		line-height: 1
+		font-family: 'gotham-book'
+		font-size: 18px
+		span
+			color: $yellow
+			font-family: 'gotham-black'
+			font-size: 42px
+			display: block
+	form
+		@extend .flex-align-center
+		justify-content: center
+		margin-bottom: 0
+		select
+			margin: 0 30px 0 0
+			border-radius: 2px
+			padding: 0 20px
+			width: 200px
+			height: 54px
+			font-size: 14px
+			// &:after
+			// 	content: ""
+			// 	background-image: url('../images/icon-arrow-down.png')
+			// 	display: block
+			// 	right: 15px
+			// 	width: 14px
+			// 	height: 8px
+			// 	position: relative
+			// 	right: 15px
+			// 	z-index: 2
+		input.btn-primary
+			height: 54px
+			padding: 0 20px
+	@media only screen and (max-width: 40rem)
+		padding: 40px 20px
+		top: -110px
+		width: initial
+		height: initial
+		flex-direction: column
+		form
+			width: 100%
+			flex-wrap: wrap
+			select
+				margin: 5px
+				width: 45%
+	@media only screen and (max-width: 30rem)
+		form
+			flex-direction: column
+			select
+				width: 100%

@@ -1,0 +1,172 @@
+// HEADER
+.site-header
+	background-color: $blue
+	color: white
+	.inner-wrap
+		@extend .flex-align-center
+		flex-wrap: nowrap
+		justify-content: space-between
+		height: 100px
+		h1
+			margin-bottom: 0
+	.main-navigation
+		font-size: 18px
+		font-family: 'gotham-black'
+		display: inline-flex
+		align-items: center
+		a
+			padding: 6px 20px
+			&.main-nav-links
+				font-family: 'gotham-bold'
+				&:nth-child(-n+5)
+					border-right: 1px dashed white
+			&:hover
+				color: white
+	.login-language-wrap
+		display: inline-flex
+		align-items: center
+		#arrow_down
+			margin-left: 10px
+			display: block
+			width: 12px
+			path
+				fill: white
+		.login
+			padding: 0 40px 0 60px
+			display: inline-flex
+			align-items: center
+			span
+				font-size: 30px
+				font-family: 'gotham-bold'
+				margin-right: 30px
+			svg
+				max-width: 25px
+				path
+					fill: white
+		.language-dropdown
+			display: none
+			position: absolute
+			z-index: 2
+			padding: 12px 16px
+			font-size: 18px
+			font-family: 'gotham-bold'
+			background-color: $blue
+			border: 1px solid white
+			top: 50px
+			left: 50%
+			margin-left: -80px
+			&.active
+				display: block
+		.language-item
+			color: white
+			&.active
+				color: $yellow
+		.language-option-wrap
+			@extend .flex-align-center
+			position: relative
+			&:hover .language-dropdown
+				display: block
+		.language-option
+			width: 34px
+			height: 34px
+			border-radius: 17px
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			background-color: white
+			position: relative
+			img
+				display: none
+				max-width: 14px 
+				&.active
+					display: block
+	@media only screen and (max-width: 60rem)
+		color: $blue
+		.inner-wrap
+			height: auto
+			flex-direction: column
+		.header-mobile-wrap
+			padding: 16px
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+		.grid-container
+			padding: 0
+		.main-navigation
+			font-weight: 300
+			display: block
+			overflow: hidden
+			max-height: 0
+			width: 100%
+			clear: both
+			background-color: $light-yellow
+			@include transition(400ms)
+			&.active 
+				max-height: 1000px
+				@include transition(400ms)
+			a.main-nav-links
+				border-bottom: 1px solid white
+				display: block
+				padding: 0.8rem
+				font-size: 30px
+				&:nth-child(-n+5)
+					border-right: none
+		.login-language-wrap
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-top: 50px
+			#arrow_down
+				width: initial
+				margin-right: 20px
+				path
+					fill: $blue
+			.login
+				padding: 0 20px 
+				svg
+					max-width: none
+					path
+						fill: $blue
+			.language-dropdown
+				top: 70px
+				right: 0
+				left: initial
+				margin-left: initial
+			.language-option
+				width: 96px
+				height: 96px
+				border-radius: 48px
+				background-color: $blue
+				img
+					max-width: 40px
+	@media only screen and (max-width: 40rem)
+		.login-language-wrap
+			#arrow_down
+				margin: 20px
+	@media only screen and (max-width: 30rem)
+		.main-navigation
+			a.main-nav-links
+				font-size: 20px
+			.login
+				span
+					font-size: 20px
+					margin-right: 15px
+				svg
+					max-width: 25px
+
+.home .site-header
+	border-bottom: 5px solid $yellow
+
+.site-header .follow-us
+	@extend .flex-align-center
+	flex-direction: column
+	justify-content: center
+	padding: 100px 0 50px
+	span
+		font-family: 'gotham-black'
+		font-size: 23px
+		text-transform: uppercase
+		margin-bottom: 40px
+	.social-icons a:nth-child(2)
+		padding: 0 40px
