@@ -64,19 +64,20 @@ $(document).ready(function(){
 		});
 
 		$('.owl-solutions').owlCarousel({
-			margin:0,
 			loop:true,
 			autoplay:true,
 			responsive: {
 				0: {
 					items:1,
 					nav:false,
+					margin:10,
 					center:true
 					// stagePadding:10
 				},
 				640: {
 					items:3,
 					nav:true,
+					margin:0,
 					center:false
 				}
 			}

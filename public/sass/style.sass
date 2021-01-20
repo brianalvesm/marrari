@@ -58,7 +58,6 @@ a, a:link, a:visited, a:active
 
 a:hover
 	color: inherit
-	text-decoration: underline
 
 // HELPERS
 .visible-mobile-only
@@ -102,13 +101,17 @@ a:hover
 // HOMEPAGE
 .sec
 	&--hero
+		padding-top: 100px
 		.hero-title
 			font-family: 'gotham-black'
 			font-size: 40px
 			line-height: 1
-			@media only screen and (max-width: 40rem) // 640px
+		@media only screen and (max-width: 40rem) // 640px
+			padding-top: 80px
+			.hero-title
 				margin-top: 100px
-			@media only screen and (max-width: 30rem) // 480px
+		@media only screen and (max-width: 30rem) // 480px
+			.hero-title
 				font-size: 30px
 		.hero-subtitle
 			font-size: 20px
@@ -121,6 +124,7 @@ a:hover
 		position: relative
 		background-image: url('../images/sec-ad-bg.jpg')
 		background-size: cover
+		background-position: center right
 		padding: 75px 0
 		&:after
 			content: ""

@@ -2,6 +2,9 @@
 .site-header
 	background-color: $blue
 	color: white
+	position: fixed
+	width: 100%
+	z-index: 99
 	.inner-wrap
 		@extend .flex-align-center
 		flex-wrap: nowrap
@@ -62,7 +65,9 @@
 			&.active
 				color: $yellow
 		.language-option-wrap
-			@extend .flex-align-center
+			display: flex
+			align-items: center
+			flex-direction: row
 			position: relative
 			&:hover .language-dropdown
 				display: block

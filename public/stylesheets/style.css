@@ -76,8 +76,7 @@ a, a:link, a:visited, a:active {
   text-decoration: none; }
 
 a:hover {
-  color: inherit;
-  text-decoration: underline; }
+  color: inherit; }
 
 @media only screen and (min-width: 60rem) {
   .visible-mobile-only {
@@ -95,13 +94,13 @@ a:hover {
   .hidden-mobile-only {
     display: none !important; } }
 
-.flex-align-center, .flex-wrap, .sec--numbers .flex-wrap article, .sec--benefits .card, .sec--sustainability .flex-wrap article, .site-header .inner-wrap, .site-header .login-language-wrap .language-option-wrap, .site-header .follow-us, .footer .inner-wrap, .footer .follow-us, .search-bar, .search-bar form {
+.flex-align-center, .flex-wrap, .sec--numbers .flex-wrap article, .sec--benefits .card, .sec--sustainability .flex-wrap article, .site-header .inner-wrap, .site-header .follow-us, .footer .inner-wrap, .footer .follow-us, .owl-carousel.owl-theme.owl-solutions .slide, .search-bar, .search-bar form {
   display: flex;
   align-items: center; }
-  .flex-align-center.fullHeight, .fullHeight.flex-wrap, .sec--numbers .flex-wrap article.fullHeight, .sec--benefits .fullHeight.card, .sec--sustainability .flex-wrap article.fullHeight, .site-header .fullHeight.inner-wrap, .site-header .login-language-wrap .fullHeight.language-option-wrap, .site-header .fullHeight.follow-us, .footer .fullHeight.inner-wrap, .footer .fullHeight.follow-us, .fullHeight.search-bar, .search-bar form.fullHeight {
+  .flex-align-center.fullHeight, .fullHeight.flex-wrap, .sec--numbers .flex-wrap article.fullHeight, .sec--benefits .fullHeight.card, .sec--sustainability .flex-wrap article.fullHeight, .site-header .fullHeight.inner-wrap, .site-header .fullHeight.follow-us, .footer .fullHeight.inner-wrap, .footer .fullHeight.follow-us, .owl-carousel.owl-theme.owl-solutions .fullHeight.slide, .fullHeight.search-bar, .search-bar form.fullHeight {
     height: 100%; }
   @media only screen and (max-width: 30rem) {
-    .flex-align-center, .flex-wrap, .sec--numbers .flex-wrap article, .sec--benefits .card, .sec--sustainability .flex-wrap article, .site-header .inner-wrap, .site-header .login-language-wrap .language-option-wrap, .site-header .follow-us, .footer .inner-wrap, .footer .follow-us, .search-bar, .search-bar form {
+    .flex-align-center, .flex-wrap, .sec--numbers .flex-wrap article, .sec--benefits .card, .sec--sustainability .flex-wrap article, .site-header .inner-wrap, .site-header .follow-us, .footer .inner-wrap, .footer .follow-us, .owl-carousel.owl-theme.owl-solutions .slide, .search-bar, .search-bar form {
       flex-direction: column; } }
 
 .flex-wrap {
@@ -122,22 +121,24 @@ a:hover {
 .space-between {
   justify-content: space-between; }
 
-.sec--hero .hero-title {
-  font-family: 'gotham-black';
-  font-size: 40px;
-  line-height: 1; }
+.sec--hero {
+  padding-top: 100px; }
+  .sec--hero .hero-title {
+    font-family: 'gotham-black';
+    font-size: 40px;
+    line-height: 1; }
   @media only screen and (max-width: 40rem) {
-    .sec--hero .hero-title {
-      margin-top: 100px; } }
+    .sec--hero {
+      padding-top: 80px; }
+      .sec--hero .hero-title {
+        margin-top: 100px; } }
   @media only screen and (max-width: 30rem) {
     .sec--hero .hero-title {
       font-size: 30px; } }
-
-.sec--hero .hero-subtitle {
-  font-size: 20px; }
-
-.sec--hero a.btn-primary {
-  margin: 50px 0 100px; }
+  .sec--hero .hero-subtitle {
+    font-size: 20px; }
+  .sec--hero a.btn-primary {
+    margin: 50px 0 100px; }
 
 .sec--clients {
   padding: 75px 0;
@@ -147,6 +148,7 @@ a:hover {
   position: relative;
   background-image: url("../images/sec-ad-bg.jpg");
   background-size: cover;
+  background-position: center right;
   padding: 75px 0; }
   .sec--ad:after {
     content: "";
@@ -399,10 +401,10 @@ a:hover {
   .sec--contact .flex-wrap {
     width: 100%;
     flex-direction: row; }
-  .sec--contact .flex-align-center, .sec--contact .flex-wrap, .sec--contact .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--contact article, .sec--contact .sec--benefits .card, .sec--benefits .sec--contact .card, .sec--contact .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--contact article, .sec--contact .site-header .inner-wrap, .site-header .sec--contact .inner-wrap, .sec--contact .site-header .login-language-wrap .language-option-wrap, .site-header .login-language-wrap .sec--contact .language-option-wrap, .sec--contact .site-header .follow-us, .site-header .sec--contact .follow-us, .sec--contact .footer .inner-wrap, .footer .sec--contact .inner-wrap, .sec--contact .footer .follow-us, .footer .sec--contact .follow-us, .sec--contact .search-bar, .sec--contact .search-bar form, .search-bar .sec--contact form {
+  .sec--contact .flex-align-center, .sec--contact .flex-wrap, .sec--contact .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--contact article, .sec--contact .sec--benefits .card, .sec--benefits .sec--contact .card, .sec--contact .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--contact article, .sec--contact .site-header .inner-wrap, .site-header .sec--contact .inner-wrap, .sec--contact .site-header .follow-us, .site-header .sec--contact .follow-us, .sec--contact .footer .inner-wrap, .footer .sec--contact .inner-wrap, .sec--contact .footer .follow-us, .footer .sec--contact .follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide, .sec--contact .search-bar, .sec--contact .search-bar form, .search-bar .sec--contact form {
     font-size: 14px;
     display: inline-flex; }
-    .sec--contact .flex-align-center img, .sec--contact .flex-wrap img, .sec--numbers .flex-wrap .sec--contact article img, .sec--contact .sec--benefits .card img, .sec--benefits .sec--contact .card img, .sec--sustainability .flex-wrap .sec--contact article img, .sec--contact .site-header .inner-wrap img, .site-header .sec--contact .inner-wrap img, .sec--contact .site-header .login-language-wrap .language-option-wrap img, .site-header .login-language-wrap .sec--contact .language-option-wrap img, .sec--contact .site-header .follow-us img, .site-header .sec--contact .follow-us img, .sec--contact .footer .inner-wrap img, .footer .sec--contact .inner-wrap img, .sec--contact .footer .follow-us img, .footer .sec--contact .follow-us img, .sec--contact .search-bar img, .search-bar .sec--contact form img {
+    .sec--contact .flex-align-center img, .sec--contact .flex-wrap img, .sec--numbers .flex-wrap .sec--contact article img, .sec--contact .sec--benefits .card img, .sec--benefits .sec--contact .card img, .sec--sustainability .flex-wrap .sec--contact article img, .sec--contact .site-header .inner-wrap img, .site-header .sec--contact .inner-wrap img, .sec--contact .site-header .follow-us img, .site-header .sec--contact .follow-us img, .sec--contact .footer .inner-wrap img, .footer .sec--contact .inner-wrap img, .sec--contact .footer .follow-us img, .footer .sec--contact .follow-us img, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide img, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide img, .sec--contact .search-bar img, .search-bar .sec--contact form img {
       margin-right: 10px; }
   .sec--contact .opening-hours {
     margin-right: 60px; }
@@ -499,7 +501,7 @@ a:hover {
       font-family: 'gotham-black';
       border: none;
       width: 250px; }
-  .sec--newsletter .flex-align-center, .sec--newsletter .flex-wrap, .sec--newsletter .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--newsletter article, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .login-language-wrap .language-option-wrap, .site-header .login-language-wrap .sec--newsletter .language-option-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .footer .inner-wrap, .footer .sec--newsletter .inner-wrap, .sec--newsletter .footer .follow-us, .footer .sec--newsletter .follow-us, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form {
+  .sec--newsletter .flex-align-center, .sec--newsletter .flex-wrap, .sec--newsletter .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--newsletter article, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .footer .inner-wrap, .footer .sec--newsletter .inner-wrap, .sec--newsletter .footer .follow-us, .footer .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form {
     height: 100%;
     padding: 25px 0; }
   @media only screen and (max-width: 40rem) {
@@ -509,7 +511,7 @@ a:hover {
       .sec--newsletter form input[type="submit"] {
         width: 100%;
         margin: 6px; }
-    .sec--newsletter .flex-align-center, .sec--newsletter .flex-wrap, .sec--newsletter .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--newsletter article, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .login-language-wrap .language-option-wrap, .site-header .login-language-wrap .sec--newsletter .language-option-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .footer .inner-wrap, .footer .sec--newsletter .inner-wrap, .sec--newsletter .footer .follow-us, .footer .sec--newsletter .follow-us, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form {
+    .sec--newsletter .flex-align-center, .sec--newsletter .flex-wrap, .sec--newsletter .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .sec--newsletter article, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .footer .inner-wrap, .footer .sec--newsletter .inner-wrap, .sec--newsletter .footer .follow-us, .footer .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form {
       flex-wrap: wrap; } }
 
 @font-face {
@@ -572,7 +574,10 @@ a:hover {
 
 .site-header {
   background-color: #2D538A;
-  color: white; }
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
   .site-header .inner-wrap {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -632,6 +637,9 @@ a:hover {
       .site-header .login-language-wrap .language-item.active {
         color: #FFCB2A; }
     .site-header .login-language-wrap .language-option-wrap {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
       position: relative; }
       .site-header .login-language-wrap .language-option-wrap:hover .language-dropdown {
         display: block; }
@@ -770,7 +778,7 @@ a:hover {
     color: #002942;
     font-family: 'gotham-black';
     font-size: 14px; }
-  .footer-copyright .flex-align-center, .footer-copyright .flex-wrap, .footer-copyright .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .footer-copyright article, .footer-copyright .sec--benefits .card, .sec--benefits .footer-copyright .card, .footer-copyright .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .footer-copyright article, .footer-copyright .site-header .inner-wrap, .site-header .footer-copyright .inner-wrap, .footer-copyright .site-header .login-language-wrap .language-option-wrap, .site-header .login-language-wrap .footer-copyright .language-option-wrap, .footer-copyright .site-header .follow-us, .site-header .footer-copyright .follow-us, .footer-copyright .footer .inner-wrap, .footer .footer-copyright .inner-wrap, .footer-copyright .footer .follow-us, .footer .footer-copyright .follow-us, .footer-copyright .search-bar, .footer-copyright .search-bar form, .search-bar .footer-copyright form {
+  .footer-copyright .flex-align-center, .footer-copyright .flex-wrap, .footer-copyright .sec--numbers .flex-wrap article, .sec--numbers .flex-wrap .footer-copyright article, .footer-copyright .sec--benefits .card, .sec--benefits .footer-copyright .card, .footer-copyright .sec--sustainability .flex-wrap article, .sec--sustainability .flex-wrap .footer-copyright article, .footer-copyright .site-header .inner-wrap, .site-header .footer-copyright .inner-wrap, .footer-copyright .site-header .follow-us, .site-header .footer-copyright .follow-us, .footer-copyright .footer .inner-wrap, .footer .footer-copyright .inner-wrap, .footer-copyright .footer .follow-us, .footer .footer-copyright .follow-us, .footer-copyright .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .footer-copyright .slide, .footer-copyright .search-bar, .footer-copyright .search-bar form, .search-bar .footer-copyright form {
     height: 100%; }
   .footer-copyright .justify-right {
     justify-content: flex-end; }
@@ -781,12 +789,13 @@ a:hover {
 a.btn-primary {
   color: #002942;
   background-color: #FFCB2A;
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  padding: 26px 60px;
+  padding: 24px 60px;
   text-transform: uppercase;
-  font-family: 'gotham-black'; }
+  font-family: 'gotham-black';
+  line-height: normal; }
 
 .owl-hero .item {
   background-position: center; }
@@ -882,6 +891,62 @@ a.btn-primary {
           line-height: 1;
           position: relative;
           top: -2px; }
+    .owl-carousel.owl-theme.owl-solutions .owl-item {
+      overflow: visible;
+      margin-bottom: 35px; }
+    .owl-carousel.owl-theme.owl-solutions .slide {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      width: 360px;
+      height: 360px;
+      padding: 50px;
+      overflow: visible;
+      cursor: pointer; }
+      .owl-carousel.owl-theme.owl-solutions .slide .slide-title {
+        font-family: 'gotham-black';
+        font-size: 22px;
+        color: white;
+        margin-top: 20px; }
+        .owl-carousel.owl-theme.owl-solutions .slide .slide-title:after {
+          content: "";
+          display: block;
+          width: 124px;
+          height: 2px;
+          position: relative;
+          left: 50%;
+          top: 5px;
+          margin-left: -62px;
+          background-color: #FFCB2A; }
+      .owl-carousel.owl-theme.owl-solutions .slide .slide-description {
+        font-family: 'gotham-book';
+        font-size: 14px;
+        color: white;
+        margin: 10px 0 0;
+        text-align: center; }
+      .owl-carousel.owl-theme.owl-solutions .slide .btn-primary {
+        position: absolute;
+        bottom: -23px;
+        z-index: 2;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -ms-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1); }
+      .owl-carousel.owl-theme.owl-solutions .slide:hover .btn-primary {
+        visibility: visible;
+        opacity: 1;
+        bottom: -33px;
+        -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -ms-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1); }
+      @media only screen and (max-width: 40rem) {
+        .owl-carousel.owl-theme.owl-solutions .slide {
+          width: initial; } }
   .owl-carousel.owl-theme.owl-blog .owl-nav [class*=owl-]:first-child, .owl-carousel.owl-theme.owl-testimonials .owl-nav [class*=owl-]:first-child {
     left: -60px; }
   .owl-carousel.owl-theme.owl-blog .owl-nav [class*=owl-]:last-child, .owl-carousel.owl-theme.owl-testimonials .owl-nav [class*=owl-]:last-child {
@@ -893,6 +958,33 @@ a.btn-primary {
     @media only screen and (max-width: 40rem) {
       .owl-carousel.owl-theme.owl-testimonials img {
         margin: 0 35px 35px 0; } }
+
+.slide-solucoes--1 {
+  background-image: url("../images/solucoes-slide-1.png"); }
+
+.slide-solucoes--2 {
+  background-image: url("../images/solucoes-slide-2.png"); }
+
+.slide-solucoes--3 {
+  background-image: url("../images/solucoes-slide-3.png"); }
+
+.slide-industria--1 {
+  background-image: url("../images/industria-slide-1.png"); }
+
+.slide-industria--2 {
+  background-image: url("../images/industria-slide-2.png"); }
+
+.slide-industria--3 {
+  background-image: url("../images/industria-slide-3.png"); }
+
+.slide-aplicacao--1 {
+  background-image: url("../images/aplicacao-slide-1.png"); }
+
+.slide-aplicacao--2 {
+  background-image: url("../images/aplicacao-slide-2.png"); }
+
+.slide-aplicacao--3 {
+  background-image: url("../images/aplicacao-slide-3.png"); }
 
 .search-bar {
   background-color: #002942;
@@ -919,14 +1011,16 @@ a.btn-primary {
     margin-bottom: 0; }
     .search-bar form select {
       margin: 0 30px 0 0;
-      border-radius: 2px;
+      border-radius: 5px;
       padding: 0 20px;
       width: 200px;
       height: 54px;
       font-size: 14px; }
     .search-bar form input.btn-primary {
       height: 54px;
-      padding: 0 20px; }
+      padding: 0 20px;
+      border: 0;
+      border-radius: 5px; }
   @media only screen and (max-width: 40rem) {
     .search-bar {
       padding: 40px 20px;
