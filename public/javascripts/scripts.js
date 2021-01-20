@@ -38,8 +38,8 @@ $(document).ready(function(){
 			  0 : {
 			    nav:false,
 			  },
-			  // breakpoint from 640 up
-			  640 : {
+			  // breakpoint from 960 up
+			  960 : {
 			  	nav:true
 			  }
 			}
@@ -55,7 +55,7 @@ $(document).ready(function(){
 					center:true
 					// stagePadding:10
 				},
-				640: {
+				960: {
 					items:5,
 					margin:60,
 					center:false
@@ -74,7 +74,7 @@ $(document).ready(function(){
 					center:true
 					// stagePadding:10
 				},
-				640: {
+				960: {
 					items:3,
 					nav:true,
 					margin:0,
@@ -95,7 +95,7 @@ $(document).ready(function(){
 					center:true,
 					stagePadding: 10
 				},
-				640: {
+				960: {
 					items:4,
 					center:false,
 					margin:0
@@ -112,7 +112,7 @@ $(document).ready(function(){
 					center:true,
 					items:1
 				},
-				640: {
+				960: {
 					nav:true,
 					center:false,
 					items:3
@@ -129,7 +129,7 @@ $(document).ready(function(){
 					nav:false,
 					center:true
 				},
-				640: {
+				960: {
 					nav:true,
 					center:false
 				}

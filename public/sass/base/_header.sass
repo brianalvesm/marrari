@@ -100,16 +100,15 @@
 			padding: 0
 		.main-navigation
 			font-weight: 300
-			display: block
+			display: none
 			overflow-x: hidden
 			overflow-y: scroll
-			max-height: 0
 			width: 100%
 			clear: both
 			background-color: $light-yellow
 			@include transition(400ms)
-			&.active 
-				max-height: 2000px
+			&.active
+				display: block
 				@include transition(400ms)
 			a.main-nav-links
 				border-bottom: 1px solid white
