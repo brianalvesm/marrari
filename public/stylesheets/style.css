@@ -855,9 +855,6 @@ a.btn-primary {
       .owl-hero .item .cell {
         justify-content: flex-start; } }
 
-.owl-carousel.owl-theme .owl-item img {
-  width: auto; }
-
 .owl-carousel.owl-theme {
   position: relative; }
   .owl-carousel.owl-theme .owl-dots button.owl-dot {
@@ -898,9 +895,14 @@ a.btn-primary {
     top: -60px; }
     .owl-carousel.owl-theme.owl-hero .owl-dots .owl-dot span {
       border: 1px solid #E6E5E5; }
-  .owl-carousel.owl-theme.owl-clients .owl-item img {
-    max-width: max-content;
-    margin: 0 auto; }
+  .owl-carousel.owl-theme.owl-clients .owl-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 74px; }
+    .owl-carousel.owl-theme.owl-clients .owl-item img {
+      max-width: max-content;
+      margin: 0 auto; }
   .owl-carousel.owl-theme.owl-solutions {
     position: relative; }
     .owl-carousel.owl-theme.owl-solutions .owl-dots .owl-dot span {

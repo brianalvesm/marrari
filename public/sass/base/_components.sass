@@ -32,8 +32,8 @@ a.btn-primary
 		@media only screen and (max-width: 60rem)
 			justify-content: flex-start
 
-.owl-carousel.owl-theme .owl-item img
-	width: auto
+// .owl-carousel.owl-theme .owl-item img
+// 	width: auto
 
 .owl-carousel.owl-theme
 	position: relative
@@ -79,9 +79,14 @@ a.btn-primary
 			span
 				border: 1px solid #E6E5E5
 	&.owl-clients
-		.owl-item img
-			max-width: max-content
-			margin: 0 auto
+		.owl-item
+			display: flex
+			align-items: center
+			height: 100%
+			min-height: 74px
+			img
+				max-width: max-content
+				margin: 0 auto
 	&.owl-solutions
 		position: relative
 		.owl-dots .owl-dot span
