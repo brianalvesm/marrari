@@ -947,7 +947,8 @@ a.btn-primary {
         font-family: 'gotham-black';
         font-size: 22px;
         color: white;
-        margin-top: 20px; }
+        margin-top: 20px;
+        text-align: center; }
         .owl-carousel.owl-theme.owl-solutions .slide .slide-title:after {
           content: "";
           display: block;
