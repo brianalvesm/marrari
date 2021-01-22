@@ -1024,7 +1024,7 @@ a.btn-primary {
   .slide-solucoes--4, .slide-solucoes--5, .slide-solucoes--6 {
     background-image: url("https://via.placeholder.com/360x360"); }
   .slide-solucoes.filter {
-    background-color: #002942;
+    background-color: rgba(0, 41, 66, 0.9);
     background-blend-mode: multiply; }
 
 .slide-industria {
@@ -1038,7 +1038,7 @@ a.btn-primary {
   .slide-industria--4, .slide-industria--5, .slide-industria--6 {
     background-image: url("https://via.placeholder.com/360x360"); }
   .slide-industria.filter {
-    background-color: #002942;
+    background-color: rgba(0, 41, 66, 0.9);
     background-blend-mode: multiply; }
 
 .slide-aplicacao {
@@ -1052,7 +1052,7 @@ a.btn-primary {
   .slide-aplicacao--4, .slide-aplicacao--5, .slide-aplicacao--6 {
     background-image: url("https://via.placeholder.com/360x360"); }
   .slide-aplicacao.filter {
-    background-color: #002942;
+    background-color: rgba(0, 41, 66, 0.9);
     background-blend-mode: multiply; }
 
 .search-bar {
