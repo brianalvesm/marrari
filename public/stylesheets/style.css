@@ -475,6 +475,16 @@ a:hover {
       left: 50%;
       margin-left: -90px;
       margin-top: 20px; }
+    .sec--contact form input:focus,
+    .sec--contact form input[type="text"]:focus,
+    .sec--contact form input[type="email"]:focus,
+    .sec--contact form input[type="tel"]:focus {
+      background-color: #E6E5E5; }
+    .sec--contact form select:focus,
+    .sec--contact form textarea:focus {
+      border: 1px solid #8a8a8a;
+      box-shadow: 0 0 5px #cacaca;
+      -webkit-box-shadow: 0 0 5px #cacaca; }
   @media only screen and (max-width: 75rem) {
     .sec--contact:after {
       right: 0; } }
