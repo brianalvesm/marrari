@@ -1021,6 +1021,11 @@ a.btn-primary {
     background-image: url("../images/solucoes-slide-2.png"); }
   .slide-solucoes--3 {
     background-image: url("../images/solucoes-slide-3.png"); }
+  .slide-solucoes--4, .slide-solucoes--5, .slide-solucoes--6 {
+    background-image: url("https://via.placeholder.com/360x360"); }
+  .slide-solucoes.filter {
+    background-color: #002942;
+    background-blend-mode: multiply; }
 
 .slide-industria {
   background-size: cover; }
@@ -1030,6 +1035,11 @@ a.btn-primary {
     background-image: url("../images/industria-slide-2.png"); }
   .slide-industria--3 {
     background-image: url("../images/industria-slide-3.png"); }
+  .slide-industria--4, .slide-industria--5, .slide-industria--6 {
+    background-image: url("https://via.placeholder.com/360x360"); }
+  .slide-industria.filter {
+    background-color: #002942;
+    background-blend-mode: multiply; }
 
 .slide-aplicacao {
   background-size: cover; }
@@ -1039,6 +1049,11 @@ a.btn-primary {
     background-image: url("../images/aplicacao-slide-2.png"); }
   .slide-aplicacao--3 {
     background-image: url("../images/aplicacao-slide-3.png"); }
+  .slide-aplicacao--4, .slide-aplicacao--5, .slide-aplicacao--6 {
+    background-image: url("https://via.placeholder.com/360x360"); }
+  .slide-aplicacao.filter {
+    background-color: #002942;
+    background-blend-mode: multiply; }
 
 .search-bar {
   background-color: #002942;
