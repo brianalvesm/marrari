@@ -60,6 +60,16 @@
     left: 50%;
     margin-left: -105px;
     background-image: url("../images/ornament-sec-testimonials.png"); }
+  .sec--video:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: 210px;
+    height: 84px;
+    left: 50%;
+    margin-left: -105px;
+    background-image: url("../images/ornament-sec-video.png"); }
 
 *,
 *:before,
@@ -553,6 +563,78 @@ a:hover {
     .sec--newsletter {
       padding: 40px 0 !important; } }
 
+.page--solutions .site-header {
+  background-color: transparent; }
+  .page--solutions .site-header .header-main {
+    background-color: #2D538A; }
+
+.page--solutions .search-bg {
+  background-color: #002942; }
+
+.page--solutions .search-bar {
+  top: 0;
+  width: 100%; }
+
+.page--solutions .secs-pad-wrap {
+  padding-top: 170px; }
+
+.page--solutions .sec--page-description {
+  padding: 220px 0 90px;
+  background-image: url("../images/sec-ad-adereco.png");
+  background-repeat: repeat-x;
+  background-position: top; }
+  .page--solutions .sec--page-description .sec-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+    color: #002942; }
+  .page--solutions .sec--page-description .paragraph {
+    font-size: 24px;
+    color: #9F9C9C; }
+
+.page--solutions .sec--video {
+  background-color: #FFCB2A;
+  padding: 100px 0; }
+
+.page--solutions .sec--solutions .solutions-main-title {
+  font-size: 44px;
+  margin-bottom: 170px; }
+
+@media only screen and (max-width: 60rem) {
+  .page--solutions .searchbar-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .page--solutions .searchbar-toggle div {
+      color: white;
+      line-height: 1;
+      font-family: 'gotham-book';
+      font-size: 18px; }
+      .page--solutions .searchbar-toggle div span {
+        color: #FFCB2A;
+        font-family: 'gotham-black';
+        font-size: 42px;
+        display: block; }
+    .page--solutions .searchbar-toggle .toggle-icon {
+      font-family: 'gotham-book';
+      font-size: 40px;
+      display: inline-block;
+      -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+      -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+      transform: rotate(-90deg); }
+    .page--solutions .searchbar-toggle.active .toggle-icon {
+      transform: rotate(90deg); }
+  .page--solutions .search-bg {
+    padding: 20px; }
+  .page--solutions #searchbar {
+    display: none;
+    width: 100%; }
+    .page--solutions #searchbar.active {
+      z-index: 30;
+      display: block; } }
+
 @font-face {
   font-family: 'gotham-black';
   src: url("../fonts/gotham/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham/gotham-black-webfont.woff") format("woff");
@@ -601,13 +683,16 @@ a:hover {
   font-weight: normal;
   font-style: normal; }
 
-.menu-toggle {
+.menu-toggle,
+.searchbar-toggle {
   display: none; }
 
 @media only screen and (max-width: 60rem) {
-  .menu-toggle {
+  .menu-toggle,
+  .searchbar-toggle {
     display: block; }
-    .menu-toggle svg {
+    .menu-toggle svg,
+    .searchbar-toggle svg {
       max-width: 34px;
       fill: #FFCB2A; } }
 
@@ -1104,3 +1189,16 @@ a.btn-primary {
         .search-bar form select {
           margin: 5px;
           width: 100%; } }
+
+.page .breadcrumbs {
+  background-color: #FFCB2A;
+  color: #2D538A;
+  margin-bottom: 0;
+  padding: 18px;
+  height: 70px; }
+  .page .breadcrumbs .breadcrumb-active {
+    font-family: 'gotham-black';
+    font-size: 24px;
+    color: #002942; }
+  .page .breadcrumbs span {
+    margin: 0 18px 0 8px; }

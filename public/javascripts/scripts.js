@@ -11,6 +11,15 @@ $(document).ready(function(){
 		  return false;
 		});
 
+	  var $searchmenu = $('#searchbar'),
+	    $searchmenulink = $('.searchbar-toggle');
+
+		$searchmenulink.click(function() {
+		  $searchmenulink.toggleClass('active');
+		  $searchmenu.toggleClass('active');
+		  return false;
+		});
+
 		$('.language-option-wrap').mouseover(function() {
 			$('.language-dropdown').toggleClass('active');
 		});
