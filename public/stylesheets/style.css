@@ -593,13 +593,38 @@ a:hover {
 
 .page--solutions .sec--video {
   background-color: #FFCB2A;
-  padding: 100px 0; }
+  padding: 100px 0;
+  position: relative; }
+  .page--solutions .sec--video input[type="submit"] {
+    background: -webkit-linear-gradient(top, #2D538A 0%, #002942 50%);
+    background: -moz-linear-gradient(top, #2D538A 0%, #002942 50%);
+    background: -o-linear-gradient(top, #2D538A 0%, #002942 50%);
+    background: linear-gradient(top, #2D538A 0%, #002942 50%);
+    font-size: 15px;
+    font-family: 'gotham-black';
+    color: #FFCB2A;
+    border: none;
+    padding: 20px 60px;
+    position: absolute;
+    z-index: 2;
+    width: initial;
+    left: 50%;
+    bottom: -30px;
+    margin-left: -190px; }
 
 .page--solutions .sec--solutions .solutions-main-title {
   font-size: 44px;
   margin-bottom: 170px; }
 
 @media only screen and (max-width: 60rem) {
+  .page--solutions .sec--video {
+    text-align: center; }
+    .page--solutions .sec--video input[type="submit"] {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      margin-left: initial;
+      padding: 20px; }
   .page--solutions .searchbar-toggle {
     display: flex;
     justify-content: space-between;

@@ -552,11 +552,33 @@ a:hover
 		&--video
 			background-color: $yellow
 			padding: 100px 0
+			position: relative
+			input[type="submit"]
+				@include gradient(top, $gradient1)
+				font-size: 15px
+				font-family: 'gotham-black'
+				color: $yellow
+				border: none
+				padding: 20px 60px
+				position: absolute
+				z-index: 2
+				width: initial
+				left: 50%
+				bottom: -30px
+				margin-left: -190px
 		&--solutions
 			.solutions-main-title
 				font-size: 44px
 				margin-bottom: 170px
 	@media only screen and (max-width: 60rem)
+		.sec--video
+			text-align: center
+			input[type="submit"]
+				position: relative
+				bottom: 0
+				left: 0
+				margin-left: initial
+				padding: 20px
 		.searchbar-toggle
 			display: flex
 			justify-content: space-between
