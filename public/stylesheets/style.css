@@ -132,6 +132,9 @@ a:hover {
 .sec-title-description {
   align-self: baseline; }
 
+.secs-pad-wrap {
+  padding-top: 170px; }
+
 .margin-right {
   margin-right: 30px; }
 
@@ -575,9 +578,6 @@ a:hover {
   top: 0;
   width: 100%; }
 
-.page--solutions .secs-pad-wrap {
-  padding-top: 170px; }
-
 .page--solutions .sec--page-description {
   padding: 220px 0 90px;
   background-image: url("../images/sec-ad-adereco.png");
@@ -659,6 +659,33 @@ a:hover {
     .page--solutions #searchbar.active {
       z-index: 30;
       display: block; } }
+
+.page--umiline .tabs,
+.page--umiline .tabs-content {
+  border: none; }
+
+.page--umiline .tabs-title > a {
+  padding: 10px; }
+  .page--umiline .tabs-title > a img {
+    max-width: 120px; }
+
+.page--umiline .sec--main {
+  padding: 65px 0; }
+  .page--umiline .sec--main span {
+    font-size: 14px;
+    color: #9B9B9B; }
+  .page--umiline .sec--main .sec-title {
+    font-size: 45px;
+    line-height: 1.2;
+    border-bottom: 1px solid #D1D1D1;
+    padding-bottom: 24px;
+    margin-bottom: 0; }
+  .page--umiline .sec--main small {
+    margin-top: 24px;
+    color: #2D538A;
+    display: block; }
+  .page--umiline .sec--main .umiline-logo {
+    margin-bottom: 12px; }
 
 @font-face {
   font-family: 'gotham-black';

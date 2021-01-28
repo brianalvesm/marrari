@@ -102,6 +102,9 @@ a:hover
 .sec-title-description
 	align-self: baseline
 
+.secs-pad-wrap
+	padding-top: 170px
+
 .margin-right
 	margin-right: 30px
 .margin-bottom
@@ -534,8 +537,6 @@ a:hover
 	.search-bar
 		top: 0
 		width: 100%
-	.secs-pad-wrap
-		padding-top: 170px
 	.sec
 		&--page-description
 			padding: 220px 0 90px
@@ -610,6 +611,34 @@ a:hover
 			&.active
 				z-index: 30
 				display: block
+
+// PRODUTOS
+.page--umiline
+	.tabs,
+	.tabs-content
+		border: none
+	.tabs-title > a
+		padding: 10px
+		img
+			max-width: 120px
+	.sec
+		&--main
+			padding: 65px 0
+			span
+				font-size: 14px
+				color: #9B9B9B
+			.sec-title
+				font-size: 45px
+				line-height: 1.2
+				border-bottom: 1px solid #D1D1D1
+				padding-bottom: 24px
+				margin-bottom: 0
+			small
+				margin-top: 24px
+				color: $blue
+				display: block
+			.umiline-logo
+				margin-bottom: 12px
 
 @import "base/typography"
 @import "base/nav-toggle"
