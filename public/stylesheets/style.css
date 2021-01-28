@@ -744,6 +744,8 @@ a:hover {
         font-family: 'gotham-bold'; }
         .site-header .main-navigation a.main-nav-links:nth-child(-n+5) {
           border-right: 1px dashed white; }
+        .site-header .main-navigation a.main-nav-links.active {
+          color: #FFCB2A; }
       .site-header .main-navigation a:hover {
         color: white; }
   .site-header .login-language-wrap {
