@@ -1,0 +1,85 @@
+// SOLUÇÕES
+.page--solutions
+	.site-header
+		background-color: transparent
+		.header-main
+			background-color: $blue
+	.search-bg
+		background-color: $dark-blue
+	.search-bar
+		top: 0
+		width: 100%
+	.sec
+		&--page-description
+			padding: 220px 0 90px
+			background-image: url('../images/sec-ad-adereco.png')
+			background-repeat: repeat-x
+			background-position: top
+			.sec-title
+				font-size: 44px
+				margin-bottom: 60px
+				color: $dark-blue
+			.paragraph
+				font-size: 24px
+				color: #9F9C9C
+		&--video
+			background-color: $yellow
+			padding: 100px 0
+			position: relative
+			input[type="submit"]
+				@include gradient(top, $gradient1)
+				font-size: 15px
+				font-family: 'gotham-black'
+				color: $yellow
+				border: none
+				padding: 20px 60px
+				position: absolute
+				z-index: 2
+				width: initial
+				left: 50%
+				bottom: -30px
+				margin-left: -190px
+		&--solutions
+			.solutions-main-title
+				font-size: 44px
+				margin-bottom: 170px
+	@media only screen and (max-width: 60rem)
+		.sec--video
+			text-align: center
+			input[type="submit"]
+				position: relative
+				bottom: 0
+				left: 0
+				margin-left: initial
+				padding: 20px
+		.searchbar-toggle
+			display: flex
+			justify-content: space-between
+			align-items: center
+			div
+				color: white
+				line-height: 1
+				font-family: 'gotham-book'
+				font-size: 18px
+				span
+					color: $yellow
+					font-family: 'gotham-black'
+					font-size: 42px
+					display: block
+			.toggle-icon
+				font-family: 'gotham-book'
+				font-size: 40px
+				display: inline-block
+				@include transition(400ms)
+				transform: rotate(-90deg)
+			&.active
+				.toggle-icon
+					transform: rotate(90deg)
+		.search-bg
+			padding: 20px
+		#searchbar
+			display: none
+			width: 100%
+			&.active
+				z-index: 30
+				display: block

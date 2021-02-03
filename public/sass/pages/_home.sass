@@ -1,0 +1,412 @@
+// HOMEPAGE
+.sec
+	&--hero
+		padding-top: 100px
+		.hero-title
+			font-family: 'gotham-black'
+			font-size: 40px
+			line-height: 1
+		.hero-subtitle
+			font-size: 20px
+		a.btn-primary
+			margin: 50px 0 100px
+		@media only screen and (max-width: 60rem) // 640px
+			padding-top: 80px
+			.hero-title
+				margin-top: 100px
+				font-size: 30px
+	&--clients
+		padding: 75px 0
+		text-align: center
+	&--ad
+		position: relative
+		background-image: url('../images/sec-ad-bg.jpg')
+		background-size: cover
+		background-position: center right
+		padding: 75px 0
+		&:after
+			content: ""
+			background-image: url('../images/sec-ad-adereco.png')
+			display: block
+			width: 724px
+			height: 83px
+			position: absolute
+			right: 0
+			top: -40px
+			z-index: 2
+		.ad-headline
+			font-family: 'gotham-medium'
+			font-size: 37px
+			color: $yellow
+			line-height: 1.1
+			span
+				display: block
+				font-family: 'gotham-black'
+				font-size: 65px
+		.paragraph
+			font-family: 'gotham-book'
+			font-size: 18px
+			color: white
+			margin-bottom: 32px
+		.yellow-bar
+			width: 70%
+			height: 57px
+			background-color: $yellow
+			background-blend-mode: screen
+			position: absolute
+			bottom: -57px
+		@media only screen and (max-width: 60rem)
+			.yellow-bar
+				width: 100%
+			.ad-headline
+				font-size: 27px
+				span
+					font-size: 45px
+			.paragraph
+				font-size: 13px
+	&--numbers
+		padding: 145px 0
+		background-image: url('../images/sec-ad-adereco.png')
+		background-repeat: repeat-x
+		background-position: bottom
+		.flex-wrap article
+			@extend .flex-align-center
+			justify-content: flex-start
+			margin: 15px
+			min-height: 130px
+			align-items: end
+			.sec-title
+				font-size: 32px
+				margin-bottom: 0
+			div
+				max-width: 232px
+				margin-left: 30px
+				color: $blue
+			figure
+				max-width: 78px
+				max-height: 78px
+	&--solutions
+		background: $blue
+		padding: 110px 0
+		.sec-title
+			font-size: 38px
+			color: white
+		.owl-carousel
+			margin-bottom: 70px
+		.sec-title-description
+			color: $yellow
+	&--benefits
+		padding: 160px 0
+		// Card
+		.card
+			box-shadow: 0 13px 12px rgba(0,0,0,0.16)
+			// margin: 0 7px
+			padding: 60px 27px
+			text-align: center
+			width: 265px
+			@extend .margin-bottom
+			@extend .flex-align-center
+			.card-title
+				font-family: 'gotham-black'
+				font-size: 22px
+				line-height: 1.1
+				color: $blue
+				margin: 30px auto 40px
+				min-height: 48px
+				position: relative
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					width: 107px
+					height: 7px
+					background-color: $yellow
+					bottom: -15px
+					left: 50%
+					margin-left: -53px
+			p
+				font-size: 14px
+		@media only screen and (max-width: 60rem)
+			.card
+				width: initial
+	&--sustainability
+		background-color: #A3FFCE
+		padding: 48px 0 130px
+		.sec-title,
+		.sec-title-description
+			color: #116917
+		.flex-wrap
+			justify-content: space-around
+			article
+				max-width: 260px
+				@extend .flex-align-center
+				flex-direction: column
+				justify-content: flex-start
+				text-align: center
+				margin: 30px
+				figure
+					@extend .margin-bottom
+				.sec-title
+					font-size: 22px
+					position: relative
+					&:after
+						content: ""
+						display: block
+						position: absolute
+						width: 107px
+						height: 7px
+						background-color: #116917
+						bottom: -15px
+						left: 50%
+						margin-left: -53px
+	&--umilab
+		background-color: $gray
+		padding: 60px 0 80px
+		.sec-title-description
+			color: $blue
+		.umilab-articles
+			align-items: flex-start
+			img
+				margin-right: 13px
+			.article-title
+				font-size: 24px
+				font-family: 'gotham-black'
+				color: $blue
+				line-height: 1
+			.article-description
+				font-size: 14px
+				font-family: 'gotham-book'
+				color: #707070
+				line-height: 1
+				display: block
+				max-width: 200px
+		.umilab-features
+			padding: 70px 0 80px
+		.umilab-articles
+			width: 100%
+			margin-bottom: 20px
+			flex-direction: row
+		@media only screen and (max-width: 60rem)
+			.flex-align-center
+				width: 100%
+			.umilab-logo
+				align-self: baseline
+				margin-top: 20px
+	&--cursos
+		background-color: $blue
+		padding: 80px 0 60px
+		color: white
+		.sec-title
+			color: white
+		.card
+			padding: 12px
+			background-color: white
+			margin-bottom: 17px
+			border-radius: 5px
+			flex-direction: row
+			figure
+				margin-right: 30px
+				border-radius: 5px
+			span
+				font-size: 14px
+				font-family: 'gotham-medium'
+				color: #707070
+			.card-title
+				font-size: 18px
+				font-family: 'gotham-black'
+				color: $blue
+				margin: 22px 0
+			.card-description
+				font-size: 14px
+				font-family: 'gotham-book'
+				color: #707070
+		.sec-categories
+			display: block
+			margin-bottom: 20px
+			font-family: 'gotham-book'
+			font-size: 18px
+		@media only screen and (max-width: 60rem)
+			.large-6:last-child
+				margin-top: 50px
+			.card
+				flex-direction: column
+				figure
+					width: 100%
+					height: 200px
+					overflow: hidden
+					margin-right: initial
+					position: relative
+					img
+						margin: auto
+						width: 100%
+						position: relative
+						top: -50%
+				div
+					margin-top: 20px
+				.card-title
+					margin-top: 0
+	&--blog
+		padding: 145px 0 135px
+		.sec-title-description
+			color: $blue
+		.blog-title
+			color: $blue
+			font-size: 24px
+			font-family: 'gotham-black'
+		.blog-categories
+			color: $blue
+			font-size: 14px
+			font-family: 'gotham-bold'
+			display: block
+			margin: 30px 0 20px
+		@media only screen and (max-width: 60rem)
+			.flex-align-center
+				width: 100%
+	&--testimonials
+		background-color: #f4f4f4
+		padding: 70px 0 100px
+		.testimonial-author
+			font-size: 18px
+			font-family: 'gotham-black'
+			margin-bottom: 0
+			color: $blue
+	&--contact
+		background-color: $yellow
+		padding: 125px 0
+		position: relative
+		&:after
+			content: ""
+			background-image: url('../images/working-guy.png')
+			position: absolute
+			display: block
+			width: 368px
+			height: 552px
+			z-index: 2
+			bottom: 0
+			right: 184px
+		.flex-wrap
+			width: 100%
+			flex-direction: row
+		.flex-align-center
+			font-size: 14px
+			display: inline-flex
+			img
+				margin-right: 10px
+		.opening-hours
+			margin-right: 60px
+		.card
+			background-color: white
+			padding: 50px 150px 50px 50px
+			margin-top: 60px
+			border-radius: 5px
+			overflow: visible
+		form
+			position: relative
+			input,
+			select,
+			textarea,
+			input::placeholder,
+			textarea::placeholder
+				background-color: $gray
+				border-radius: 5px
+				border: 2px solid $gray
+				margin: 8px 10px
+				box-shadow: none
+				display: block
+				color: $blue
+				font-family: 'gotham-book'
+				font-size: 14px
+				text-transform: uppercase
+			input,
+			select,
+				height: 60px
+				width: -webkit-fill-available
+			textarea
+				height: 200px
+				width: -webkit-fill-available
+			input[type="submit"]
+				@include gradient(top, $gradient1)
+				font-size: 15px
+				font-family: 'gotham-black'
+				color: $yellow
+				border: none
+				padding: 20px 60px
+				position: absolute
+				z-index: 2
+				width: initial
+				left: 50%
+				margin-left: -90px
+				margin-top: 20px
+			input:focus,
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+			input[type="tel"]:focus
+				background-color: $gray
+			select:focus,
+			textarea:focus
+				border: 1px solid #8a8a8a
+				box-shadow: 0 0 5px #cacaca
+				-webkit-box-shadow: 0 0 5px #cacaca
+		@media only screen and (max-width: 75rem)
+			&:after
+				right: 0
+		@media only screen and (max-width: 60rem)
+			padding: 80px 0
+			&:after
+				position: relative
+				right: initial
+				bottom: -80px
+				width: auto
+			.padding-0-mobile
+				padding: 0
+			.flex-wrap
+				margin-top: 20px
+			.card
+				padding: 60px 20px 130px
+				border-radius: 0
+			form input[type="submit"]
+				margin-top: 100px
+	&--newsletter
+		background-color: #939598
+		.newsletter-title
+			color: white
+			font-family: 'gotham-black'
+			font-size: 20px
+		form
+			display: flex
+			input
+				height: 60px
+				margin: 0 6px
+				width: 360px
+				border-radius: 10px
+				border: none
+				box-shadow: none
+				&::placeholder
+					font-family: 'gotham-book'
+					font-size: 18px
+					color: $blue
+			input[type="submit"]
+				color: $dark-blue
+				background-color: $yellow
+				display: inline-block
+				padding: 0 60px
+				text-transform: uppercase
+				font-family: 'gotham-black'
+				border: none
+				width: 250px
+		.flex-align-center
+			height: 100%
+			padding: 25px 0
+		@media only screen and (max-width: 60rem)
+			form
+				flex-wrap: wrap
+				input,
+				input[type="submit"]
+					width: 100%
+					margin: 6px
+			.flex-align-center
+				flex-wrap: wrap
+	@media only screen and (max-width: 60rem)
+		padding: 80px 0 !important
+		&--newsletter
+			padding: 40px 0 !important

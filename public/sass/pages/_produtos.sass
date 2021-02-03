@@ -1,0 +1,84 @@
+// PRODUTOS
+.page--umiline
+	.tabs,
+	.tabs-content
+		border: none
+	.tabs-title > a
+		padding: 10px
+		img
+			max-width: 120px
+	.accordion-item.is-active .accordion-title
+		background-color: $blue
+		color: white
+	.accordion-item:first-child > :first-child
+		border-top-width: 2px
+	.accordion-item:last-child:not(.is-active) > .accordion-title,
+	.accordion-item:last-child > .accordion-content:last-child
+		border-style: solid
+		border-color: $blue
+		border-bottom-width: 2px
+		border-left: none
+		border-right: none
+	.accordion-title
+		border-style: solid
+		border-color: $blue
+		border-top-width: 0
+		border-bottom-width: 2px
+		font-family: 'helvetica'
+		font-size: 24px
+		color: $blue
+		&::before
+			right: 1rem
+			left: initial
+	.sec
+		&--main
+			padding: 65px 0
+			span
+				font-size: 14px
+				color: #9B9B9B
+			.sec-title
+				font-size: 45px
+				line-height: 1.2
+				border-bottom: 1px solid #D1D1D1
+				padding-bottom: 24px
+				margin-bottom: 0
+			small
+				margin-top: 24px
+				color: $blue
+				display: block
+			.umiline-logo
+				margin-bottom: 12px
+		&--umiline-topics
+			padding: 145px 0 90px
+			.flex-wrap
+				justify-content: flex-start
+				article
+					@extend .flex-align-center
+					justify-content: flex-start
+					margin: 15px
+					min-width: calc(33.3% - 30px)
+					min-height: 130px
+					align-items: end
+					.sec-title
+						font-size: 32px
+						margin-bottom: 0
+					span
+						max-width: 232px
+						margin-left: 30px
+						color: #707070
+					figure
+						max-width: 78px
+						max-height: 78px
+		&--related-products
+			padding: 90px 0
+			.related-products
+				display: flex
+				flex-wrap: wrap
+				align-items: flex-start
+			figure
+				margin-right: 30px
+			figcaption
+				font-family: 'gotham-black'
+				font-size: 14px
+				color: $blue
+				margin-top: 15px

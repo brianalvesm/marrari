@@ -272,9 +272,14 @@ a.btn-primary
 	margin-bottom: 0
 	padding: 18px
 	height: 70px
+	@media only screen and (max-width: 40rem)
+		overflow-x: auto
+		overflow-y: hidden
 	.breadcrumb-active
 		font-family: 'gotham-black'
 		font-size: 24px
 		color: $dark-blue
 	span
 		margin: 0 18px 0 8px
+	a
+		flex: none
