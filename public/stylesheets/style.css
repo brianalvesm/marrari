@@ -133,7 +133,7 @@ a:hover {
   align-self: baseline; }
 
 .secs-pad-wrap {
-  padding-top: 170px; }
+  padding-top: 100px; }
 
 .margin-right {
   margin-right: 30px; }
@@ -192,12 +192,6 @@ a:hover {
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'helvetica';
-  src: url("../fonts/helvetica/helveticaneue-webfont.woff2") format("woff2"), url("../fonts/helvetica/helveticaneue-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 .menu-toggle,
 .searchbar-toggle {
   display: none; }
@@ -212,6 +206,7 @@ a:hover {
       fill: #FFCB2A; } }
 
 .site-header {
+  border-bottom: 5px solid #FFCB2A;
   background-color: #2D538A;
   color: white;
   position: fixed;
@@ -383,9 +378,6 @@ a:hover {
       margin-right: 15px; }
     .site-header .main-navigation .login svg {
       max-width: 25px; } }
-
-.home .site-header {
-  border-bottom: 5px solid #FFCB2A; }
 
 .site-header .follow-us {
   flex-direction: column;
@@ -712,7 +704,8 @@ a.btn-primary {
   color: #2D538A;
   margin-bottom: 0;
   padding: 18px;
-  height: 70px; }
+  height: 70px;
+  position: relative; }
   @media only screen and (max-width: 40rem) {
     .page .breadcrumbs {
       overflow-x: auto;
@@ -725,6 +718,14 @@ a.btn-primary {
     margin: 0 18px 0 8px; }
   .page .breadcrumbs a {
     flex: none; }
+
+#searchbar-wrap {
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+  #searchbar-wrap.sticky {
+    position: fixed;
+    top: 100px; }
 
 .sec--hero {
   padding-top: 100px; }
@@ -1271,8 +1272,8 @@ a.btn-primary {
   border-color: #2D538A;
   border-top-width: 0;
   border-bottom-width: 2px;
-  font-family: 'helvetica';
-  font-size: 24px;
+  font-family: 'gotham-medium';
+  font-size: 16px;
   color: #2D538A; }
   .page--umiline .accordion-title::before {
     right: 1rem;

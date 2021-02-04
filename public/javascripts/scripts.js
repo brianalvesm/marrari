@@ -35,6 +35,16 @@ $(document).ready(function(){
     	$language.addClass('active');
 
 	  });
+
+		$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+
+		    if (scroll >= 100) {
+		      $("#searchbar-wrap").addClass("sticky");
+		    } else {
+		    	$("#searchbar-wrap").removeClass("sticky");
+		    }
+		});
 		
 		$('.owl-hero').owlCarousel({
 	    items:1,
