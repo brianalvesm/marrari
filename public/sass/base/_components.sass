@@ -295,3 +295,43 @@ a.btn-primary
 	@media only screen and (max-width: 60rem)
 		.grid-container
 			padding: 0
+
+.timeline-wrapper
+	display: flex
+	justify-content: space-between
+	border-top: 2px solid $blue
+	article
+		h2
+			font-size: 44px
+			font-family: 'gotham-black'
+			color: $blue
+			margin-top: 36px
+		p
+			max-width: 290px
+		&:before
+			content: ""
+			position: relative
+			top: -10px
+			display: block
+			width: 20px
+			height: 20px
+			border-radius: 10px
+			border: 2px solid $blue
+			background-color: $yellow
+	&:after
+		content: ""
+		position: relative
+		top: -10px
+		display: block
+		width: 20px
+		height: 20px
+		border-radius: 10px
+		border: 2px solid $blue
+		background-color: $yellow
+	@media only screen and (max-width: 40rem)
+		flex-wrap: wrap
+		border-top: none
+		justify-content: center
+		&:after,
+		article:before
+			content: none

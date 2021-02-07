@@ -1,0 +1,43 @@
+// SOBRE
+.page--sobre
+	.grid-padding-x
+		padding: 0 80px
+		@media only screen and (max-width: 40rem)
+			padding: 0
+	.sec-title
+		margin-top: 100px
+		font-size: 44px
+	.sec
+		&--main
+			padding: 80px 0
+			.responsive-embed
+				max-height: 668px
+		&--quote
+			padding: 70px 0 50px
+			background-color: $blue
+			color: white
+			font-family: 'gotham-black'
+			font-size: 30px
+			.quote
+				position: relative
+				&:before
+					content: open-quote
+					position: absolute
+					transform: rotate(180deg)
+					top: -60px
+					font-size: 55px
+					color: #9F9C9C
+					line-height: 1
+		&--timeline
+			padding: 50px 0
+			.sec-title
+				margin-bottom: 80px
+		@media only screen and (max-width: 40rem)
+			&--main
+				.sec-title
+					margin-top: 50px
+			&--quote
+				font-size: 22px
+				text-align: center
+			&--timeline .sec-title
+				margin-bottom: 0
