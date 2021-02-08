@@ -1387,12 +1387,6 @@ a.btn-primary {
     color: #2D538A;
     margin-top: 15px; }
 
-.page--sobre .grid-padding-x {
-  padding: 0 80px; }
-  @media only screen and (max-width: 40rem) {
-    .page--sobre .grid-padding-x {
-      padding: 0; } }
-
 .page--sobre .sec-title {
   margin-top: 100px;
   font-size: 44px; }
@@ -1423,6 +1417,17 @@ a.btn-primary {
   padding: 50px 0; }
   .page--sobre .sec--timeline .sec-title {
     margin-bottom: 80px; }
+
+.page--sobre .sec--market .market-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .page--sobre .sec--market .market-wrapper figure {
+    margin: 14px 9px; }
+  .page--sobre .sec--market .market-wrapper figcaption {
+    font-family: 'gotham-black';
+    font-size: 22px;
+    color: #2D538A;
+    margin-top: 14px; }
 
 @media only screen and (max-width: 40rem) {
   .page--sobre .sec--main .sec-title {
