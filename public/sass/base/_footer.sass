@@ -4,11 +4,13 @@
 	color: white
 	padding: 70px 0 25px
 	.inner-wrap
-		@extend .flex-align-center
+		display: flex
+		align-items: center
 		flex-wrap: nowrap
 		justify-content: space-between
 	.follow-us
-		@extend .flex-align-center
+		display: flex
+		align-items: center
 		font-size: 14px
 		font-family: 'gotham-bold'
 		justify-content: flex-end
@@ -28,7 +30,7 @@
 		color: $dark-blue
 		font-family: 'gotham-black'
 		font-size: 14px
-	.flex-align-center
+	.flex.align-center
 		height: 100%
 	.justify-right
 		justify-content: flex-end

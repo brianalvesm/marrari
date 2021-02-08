@@ -69,8 +69,9 @@
 		background-image: url('../images/sec-ad-adereco.png')
 		background-repeat: repeat-x
 		background-position: bottom
-		.flex-wrap article
-			@extend .flex-align-center
+		.numbers-wrapper article
+			@extend .flex
+			@extend .align-center
 			justify-content: flex-start
 			margin: 15px
 			min-height: 130px
@@ -105,7 +106,8 @@
 			text-align: center
 			width: 265px
 			@extend .margin-bottom
-			@extend .flex-align-center
+			@extend .flex
+			@extend .align-center
 			.card-title
 				font-family: 'gotham-black'
 				font-size: 22px
@@ -135,11 +137,12 @@
 		.sec-title,
 		.sec-title-description
 			color: #116917
-		.flex-wrap
+		.sustainability-wrapper
 			justify-content: space-around
 			article
 				max-width: 260px
-				@extend .flex-align-center
+				@extend .flex
+				@extend .align-center
 				flex-direction: column
 				justify-content: flex-start
 				text-align: center
@@ -187,7 +190,7 @@
 			margin-bottom: 20px
 			flex-direction: row
 		@media only screen and (max-width: 60rem)
-			.flex-align-center
+			.flex.align-center
 				width: 100%
 			.umilab-logo
 				align-self: baseline
@@ -260,7 +263,7 @@
 			display: block
 			margin: 30px 0 20px
 		@media only screen and (max-width: 60rem)
-			.flex-align-center
+			.flex.align-center
 				width: 100%
 	&--testimonials
 		background-color: #f4f4f4
@@ -284,10 +287,10 @@
 			z-index: 2
 			bottom: 0
 			right: 184px
-		.flex-wrap
+		.flex.wrap
 			width: 100%
 			flex-direction: row
-		.flex-align-center
+		.flex.align-center
 			font-size: 14px
 			display: inline-flex
 			img
@@ -359,7 +362,7 @@
 				width: auto
 			.padding-0-mobile
 				padding: 0
-			.flex-wrap
+			.flex.wrap
 				margin-top: 20px
 			.card
 				padding: 60px 20px 130px
@@ -394,7 +397,7 @@
 				font-family: 'gotham-black'
 				border: none
 				width: 250px
-		.flex-align-center
+		.flex.align-center
 			height: 100%
 			padding: 25px 0
 		@media only screen and (max-width: 60rem)
@@ -404,7 +407,7 @@
 				input[type="submit"]
 					width: 100%
 					margin: 6px
-			.flex-align-center
+			.flex.align-center
 				flex-wrap: wrap
 	@media only screen and (max-width: 60rem)
 		padding: 80px 0 !important

@@ -37,6 +37,7 @@ a.btn-primary
 
 .owl-carousel.owl-theme
 	position: relative
+	z-index: 0
 	.owl-dots button.owl-dot
 		position: relative
 		top: 15px
@@ -48,8 +49,6 @@ a.btn-primary
 		&.active span
 			background: $yellow
 			border: $yellow
-	// .owl-stage
-	// 	@extend .flex-align-center
 	.owl-nav
 		margin-top: 0
 		position: absolute
@@ -119,7 +118,8 @@ a.btn-primary
 			margin-bottom: 35px
 		.slide
 			position: relative
-			@extend .flex-align-center
+			@extend .flex
+			@extend .align-center
 			flex-direction: column
 			justify-content: center
 			width: 360px
@@ -208,7 +208,8 @@ a.btn-primary
 .search-bar
 	background-color: $dark-blue
 	padding: 30px 40px
-	@extend .flex-align-center
+	@extend .flex
+	@extend .align-center
 	justify-content: space-around
 	position: relative
 	top: -145px
@@ -227,7 +228,8 @@ a.btn-primary
 			font-size: 42px
 			display: block
 	form
-		@extend .flex-align-center
+		@extend .flex
+		@extend .align-center
 		justify-content: center
 		margin-bottom: 0
 		select
@@ -288,7 +290,7 @@ a.btn-primary
 #searchbar-wrap
 	position: absolute
 	width: 100%
-	z-index: 1
+	z-index: 999
 	&.sticky
 		position: fixed
 		top: 100px

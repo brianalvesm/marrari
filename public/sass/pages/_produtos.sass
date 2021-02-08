@@ -50,15 +50,15 @@
 				margin-bottom: 12px
 		&--umiline-topics
 			padding: 145px 0 90px
-			.flex-wrap
+			.umiline-topics-wrapper
 				justify-content: flex-start
 				article
-					@extend .flex-align-center
+					display: flex
+					align-items: flex-start
 					justify-content: flex-start
 					margin: 15px
 					min-width: calc(33.3% - 30px)
 					min-height: 130px
-					align-items: end
 					.sec-title
 						font-size: 32px
 						margin-bottom: 0
@@ -82,3 +82,16 @@
 				font-size: 14px
 				color: $blue
 				margin-top: 15px
+		&--sustainability
+			.sustainability-wrapper
+				justify-content: space-around
+				article
+					max-width: 260px
+					@extend .flex
+					@extend .align-center
+					flex-direction: column
+					justify-content: flex-start
+					text-align: center
+					margin: 30px
+					figure
+						@extend .margin-bottom
