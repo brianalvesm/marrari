@@ -80,6 +80,16 @@
     left: 50%;
     margin-left: -105px;
     background-image: url("../images/ornament-sec-quote.png"); }
+  .sec--quote2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -25px;
+    width: 210px;
+    height: 84px;
+    left: 50%;
+    margin-left: -105px;
+    background-image: url("../images/ornament-sec-quote2.png"); }
 
 .sec-title {
   font-family: 'gotham-black';
@@ -135,7 +145,7 @@ a:hover {
   .flex-direction-column-mobile {
     flex-direction: column; } }
 
-.wrapper .flex, .wrapper .site-header .inner-wrap, .site-header .wrapper .inner-wrap, .wrapper .site-header .follow-us, .site-header .wrapper .follow-us, .wrapper .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .wrapper .slide, .wrapper .search-bar, .wrapper .search-bar form, .search-bar .wrapper form, .wrapper .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .wrapper article, .wrapper .sec--benefits .card, .sec--benefits .wrapper .card, .wrapper .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .wrapper article {
+.wrapper .flex, .wrapper .site-header .inner-wrap, .wrapper .site-header .follow-us, .site-header .wrapper .follow-us, .wrapper .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .wrapper .slide, .wrapper .search-bar, .wrapper .search-bar form, .search-bar .wrapper form, .wrapper .sec--benefits .card, .sec--benefits .wrapper .card, .wrapper .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .wrapper article {
   display: flex; }
 
 .wrapper .inline-flex {
@@ -144,7 +154,7 @@ a:hover {
 .wrapper .wrap {
   flex-wrap: wrap; }
 
-.wrapper .align-center, .wrapper .site-header .inner-wrap, .site-header .wrapper .inner-wrap, .wrapper .site-header .follow-us, .site-header .wrapper .follow-us, .wrapper .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .wrapper .slide, .wrapper .search-bar, .wrapper .search-bar form, .search-bar .wrapper form, .wrapper .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .wrapper article, .wrapper .sec--benefits .card, .sec--benefits .wrapper .card, .wrapper .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .wrapper article {
+.wrapper .align-center, .wrapper .site-header .inner-wrap, .wrapper .site-header .follow-us, .site-header .wrapper .follow-us, .wrapper .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .wrapper .slide, .wrapper .search-bar, .wrapper .search-bar form, .search-bar .wrapper form, .wrapper .sec--benefits .card, .sec--benefits .wrapper .card, .wrapper .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .wrapper article {
   align-items: center;
   justify-content: initial; }
 
@@ -230,7 +240,7 @@ a:hover {
       max-width: 34px;
       fill: #FFCB2A; } }
 
-.site-header {
+.wrapper .site-header {
   border-bottom: 5px solid #FFCB2A;
   background-color: #2D538A;
   color: white;
@@ -238,50 +248,50 @@ a:hover {
   width: 100%;
   height: 100px;
   z-index: 9; }
-  .site-header .inner-wrap {
+  .wrapper .site-header .inner-wrap {
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 100px; }
-    .site-header .inner-wrap h1 {
+    .wrapper .site-header .inner-wrap h1 {
       margin-bottom: 0;
       line-height: 1; }
-  .site-header .main-navigation {
+  .wrapper .site-header .main-navigation {
     font-size: 18px;
     font-family: 'gotham-black';
     display: inline-flex;
     align-items: center; }
-    .site-header .main-navigation a {
+    .wrapper .site-header .main-navigation a {
       padding: 6px 20px; }
-      .site-header .main-navigation a.main-nav-links {
+      .wrapper .site-header .main-navigation a.main-nav-links {
         font-family: 'gotham-bold'; }
-        .site-header .main-navigation a.main-nav-links:nth-child(-n+5) {
+        .wrapper .site-header .main-navigation a.main-nav-links:nth-child(-n+5) {
           border-right: 1px dashed white; }
-        .site-header .main-navigation a.main-nav-links.active {
+        .wrapper .site-header .main-navigation a.main-nav-links.active {
           color: #FFCB2A; }
-      .site-header .main-navigation a:hover {
+      .wrapper .site-header .main-navigation a:hover {
         color: white; }
-  .site-header .login-language-wrap {
+  .wrapper .site-header .login-language-wrap {
     display: inline-flex;
     align-items: center; }
-    .site-header .login-language-wrap #arrow_down {
+    .wrapper .site-header .login-language-wrap #arrow_down {
       margin-left: 10px;
       display: block;
       width: 12px; }
-      .site-header .login-language-wrap #arrow_down path {
+      .wrapper .site-header .login-language-wrap #arrow_down path {
         fill: white; }
-    .site-header .login-language-wrap .login {
+    .wrapper .site-header .login-language-wrap .login {
       padding: 0 40px 0 60px;
       display: inline-flex;
       align-items: center; }
-      .site-header .login-language-wrap .login span {
+      .wrapper .site-header .login-language-wrap .login span {
         font-size: 30px;
         font-family: 'gotham-bold';
         margin-right: 30px; }
-      .site-header .login-language-wrap .login svg {
+      .wrapper .site-header .login-language-wrap .login svg {
         max-width: 25px; }
-        .site-header .login-language-wrap .login svg path {
+        .wrapper .site-header .login-language-wrap .login svg path {
           fill: white; }
-    .site-header .login-language-wrap .language-dropdown {
+    .wrapper .site-header .login-language-wrap .language-dropdown {
       display: none;
       position: absolute;
       z-index: 2;
@@ -293,20 +303,20 @@ a:hover {
       top: 50px;
       left: 50%;
       margin-left: -80px; }
-      .site-header .login-language-wrap .language-dropdown.active {
+      .wrapper .site-header .login-language-wrap .language-dropdown.active {
         display: block; }
-    .site-header .login-language-wrap .language-item {
+    .wrapper .site-header .login-language-wrap .language-item {
       color: white; }
-      .site-header .login-language-wrap .language-item.active {
+      .wrapper .site-header .login-language-wrap .language-item.active {
         color: #FFCB2A; }
-    .site-header .login-language-wrap .language-option-wrap {
+    .wrapper .site-header .login-language-wrap .language-option-wrap {
       display: flex;
       align-items: center;
       flex-direction: row;
       position: relative; }
-      .site-header .login-language-wrap .language-option-wrap:hover .language-dropdown {
+      .wrapper .site-header .login-language-wrap .language-option-wrap:hover .language-dropdown {
         display: block; }
-    .site-header .login-language-wrap .language-option {
+    .wrapper .site-header .login-language-wrap .language-option {
       width: 34px;
       height: 34px;
       border-radius: 17px;
@@ -315,26 +325,26 @@ a:hover {
       justify-content: center;
       background-color: white;
       position: relative; }
-      .site-header .login-language-wrap .language-option img {
+      .wrapper .site-header .login-language-wrap .language-option img {
         display: none;
         max-width: 14px; }
-        .site-header .login-language-wrap .language-option img.active {
+        .wrapper .site-header .login-language-wrap .language-option img.active {
           display: block; }
   @media only screen and (max-width: 60rem) {
-    .site-header {
+    .wrapper .site-header {
       color: #2D538A; }
-      .site-header .inner-wrap {
+      .wrapper .site-header .inner-wrap {
         height: auto;
         flex-direction: column; }
-      .site-header .header-mobile-wrap {
+      .wrapper .site-header .header-mobile-wrap {
         padding: 16px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between; }
-      .site-header .grid-container {
+      .wrapper .site-header .grid-container {
         padding: 0; }
-      .site-header .main-navigation {
+      .wrapper .site-header .main-navigation {
         font-weight: 300;
         display: none;
         width: 100%;
@@ -344,7 +354,7 @@ a:hover {
         -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
         -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
         transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1); }
-        .site-header .main-navigation.active {
+        .wrapper .site-header .main-navigation.active {
           position: absolute;
           left: 0;
           top: 0;
@@ -360,52 +370,52 @@ a:hover {
           -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
           -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
           transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1); }
-        .site-header .main-navigation a.main-nav-links {
+        .wrapper .site-header .main-navigation a.main-nav-links {
           border-bottom: 1px solid white;
           display: block;
           padding: 0.8rem;
           font-size: 30px; }
-          .site-header .main-navigation a.main-nav-links:nth-child(-n+5) {
+          .wrapper .site-header .main-navigation a.main-nav-links:nth-child(-n+5) {
             border-right: none; }
-          .site-header .main-navigation a.main-nav-links.active {
+          .wrapper .site-header .main-navigation a.main-nav-links.active {
             color: #2D538A; }
-      .site-header .login-language-wrap {
+      .wrapper .site-header .login-language-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 50px; }
-        .site-header .login-language-wrap #arrow_down {
+        .wrapper .site-header .login-language-wrap #arrow_down {
           width: initial;
           margin-right: 20px; }
-          .site-header .login-language-wrap #arrow_down path {
+          .wrapper .site-header .login-language-wrap #arrow_down path {
             fill: #2D538A; }
-        .site-header .login-language-wrap .login {
+        .wrapper .site-header .login-language-wrap .login {
           padding: 0 20px; }
-          .site-header .login-language-wrap .login svg {
+          .wrapper .site-header .login-language-wrap .login svg {
             max-width: none; }
-            .site-header .login-language-wrap .login svg path {
+            .wrapper .site-header .login-language-wrap .login svg path {
               fill: #2D538A; }
-        .site-header .login-language-wrap .language-dropdown {
+        .wrapper .site-header .login-language-wrap .language-dropdown {
           top: 70px;
           right: 0;
           left: initial;
           margin-left: initial; }
-        .site-header .login-language-wrap .language-option {
+        .wrapper .site-header .login-language-wrap .language-option {
           width: 96px;
           height: 96px;
           border-radius: 48px;
           background-color: #2D538A; }
-          .site-header .login-language-wrap .language-option img {
+          .wrapper .site-header .login-language-wrap .language-option img {
             max-width: 40px; } }
   @media only screen and (max-width: 40rem) {
-    .site-header .login-language-wrap #arrow_down {
+    .wrapper .site-header .login-language-wrap #arrow_down {
       margin: 20px; }
-    .site-header .main-navigation a.main-nav-links {
+    .wrapper .site-header .main-navigation a.main-nav-links {
       font-size: 20px; }
-    .site-header .main-navigation .login span {
+    .wrapper .site-header .main-navigation .login span {
       font-size: 20px;
       margin-right: 15px; }
-    .site-header .main-navigation .login svg {
+    .wrapper .site-header .main-navigation .login svg {
       max-width: 25px; } }
 
 .site-header .follow-us {
@@ -452,7 +462,7 @@ a:hover {
     color: #002942;
     font-family: 'gotham-black';
     font-size: 14px; }
-  .footer-copyright .flex.align-center, .footer-copyright .site-header .inner-wrap, .site-header .footer-copyright .inner-wrap, .footer-copyright .site-header .follow-us, .site-header .footer-copyright .follow-us, .footer-copyright .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .footer-copyright .slide, .footer-copyright .search-bar, .footer-copyright .search-bar form, .search-bar .footer-copyright form, .footer-copyright .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .footer-copyright article, .footer-copyright .sec--benefits .card, .sec--benefits .footer-copyright .card, .footer-copyright .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .footer-copyright article {
+  .footer-copyright .flex.align-center, .footer-copyright .wrapper .site-header .inner-wrap, .wrapper .site-header .footer-copyright .inner-wrap, .footer-copyright .site-header .follow-us, .site-header .footer-copyright .follow-us, .footer-copyright .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .footer-copyright .slide, .footer-copyright .search-bar, .footer-copyright .search-bar form, .search-bar .footer-copyright form, .footer-copyright .sec--benefits .card, .sec--benefits .footer-copyright .card, .footer-copyright .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .footer-copyright article {
     height: 100%; }
   .footer-copyright .justify-right {
     justify-content: flex-end; }
@@ -469,7 +479,8 @@ a.btn-primary {
   padding: 24px 60px;
   text-transform: uppercase;
   font-family: 'gotham-black';
-  line-height: normal; }
+  line-height: normal;
+  text-align: center; }
 
 .owl-hero .item {
   background-position: center; }
@@ -877,21 +888,25 @@ a.btn-primary {
   background-image: url("../images/sec-ad-adereco.png");
   background-repeat: repeat-x;
   background-position: bottom; }
-  .sec--numbers .numbers-wrapper article {
-    justify-content: flex-start;
-    margin: 15px;
-    min-height: 130px;
-    align-items: end; }
-    .sec--numbers .numbers-wrapper article .sec-title {
-      font-size: 32px;
-      margin-bottom: 0; }
-    .sec--numbers .numbers-wrapper article div {
-      max-width: 232px;
-      margin-left: 30px;
-      color: #2D538A; }
-    .sec--numbers .numbers-wrapper article figure {
-      max-width: 78px;
-      max-height: 78px; }
+  .sec--numbers .numbers-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .sec--numbers .numbers-wrapper article {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 15px;
+      min-height: 130px; }
+      .sec--numbers .numbers-wrapper article .sec-title {
+        font-size: 32px;
+        margin-bottom: 0; }
+      .sec--numbers .numbers-wrapper article div {
+        max-width: 232px;
+        margin-left: 30px;
+        color: #2D538A; }
+      .sec--numbers .numbers-wrapper article figure {
+        max-width: 78px;
+        max-height: 78px; }
 
 .sec--solutions {
   background: #2D538A;
@@ -991,7 +1006,7 @@ a.btn-primary {
     margin-bottom: 20px;
     flex-direction: row; }
   @media only screen and (max-width: 60rem) {
-    .sec--umilab .flex.align-center, .sec--umilab .site-header .inner-wrap, .site-header .sec--umilab .inner-wrap, .sec--umilab .site-header .follow-us, .site-header .sec--umilab .follow-us, .sec--umilab .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--umilab .slide, .sec--umilab .search-bar, .sec--umilab .search-bar form, .search-bar .sec--umilab form, .sec--umilab .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .sec--umilab article, .sec--umilab .sec--benefits .card, .sec--benefits .sec--umilab .card, .sec--umilab .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--umilab article {
+    .sec--umilab .flex.align-center, .sec--umilab .wrapper .site-header .inner-wrap, .wrapper .site-header .sec--umilab .inner-wrap, .sec--umilab .site-header .follow-us, .site-header .sec--umilab .follow-us, .sec--umilab .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--umilab .slide, .sec--umilab .search-bar, .sec--umilab .search-bar form, .search-bar .sec--umilab form, .sec--umilab .sec--benefits .card, .sec--benefits .sec--umilab .card, .sec--umilab .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--umilab article {
       width: 100%; }
     .sec--umilab .umilab-logo {
       align-self: baseline;
@@ -1066,7 +1081,7 @@ a.btn-primary {
     display: block;
     margin: 30px 0 20px; }
   @media only screen and (max-width: 60rem) {
-    .sec--blog .flex.align-center, .sec--blog .site-header .inner-wrap, .site-header .sec--blog .inner-wrap, .sec--blog .site-header .follow-us, .site-header .sec--blog .follow-us, .sec--blog .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--blog .slide, .sec--blog .search-bar, .sec--blog .search-bar form, .search-bar .sec--blog form, .sec--blog .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .sec--blog article, .sec--blog .sec--benefits .card, .sec--benefits .sec--blog .card, .sec--blog .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--blog article {
+    .sec--blog .flex.align-center, .sec--blog .wrapper .site-header .inner-wrap, .wrapper .site-header .sec--blog .inner-wrap, .sec--blog .site-header .follow-us, .site-header .sec--blog .follow-us, .sec--blog .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--blog .slide, .sec--blog .search-bar, .sec--blog .search-bar form, .search-bar .sec--blog form, .sec--blog .sec--benefits .card, .sec--benefits .sec--blog .card, .sec--blog .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--blog article {
       width: 100%; } }
 
 .sec--testimonials {
@@ -1092,13 +1107,13 @@ a.btn-primary {
     z-index: 2;
     bottom: 0;
     right: 184px; }
-  .sec--contact .flex.wrap, .sec--contact .site-header .wrap.inner-wrap, .site-header .sec--contact .wrap.inner-wrap, .sec--contact .site-header .wrap.follow-us, .site-header .sec--contact .wrap.follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .wrap.slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .wrap.slide, .sec--contact .wrap.search-bar, .sec--contact .search-bar form.wrap, .search-bar .sec--contact form.wrap, .sec--contact .sec--numbers .numbers-wrapper article.wrap, .sec--numbers .numbers-wrapper .sec--contact article.wrap, .sec--contact .sec--benefits .wrap.card, .sec--benefits .sec--contact .wrap.card, .sec--contact .sec--sustainability .sustainability-wrapper article.wrap, .sec--sustainability .sustainability-wrapper .sec--contact article.wrap {
+  .sec--contact .flex.wrap, .sec--contact .wrapper .site-header .wrap.inner-wrap, .wrapper .site-header .sec--contact .wrap.inner-wrap, .sec--contact .site-header .wrap.follow-us, .site-header .sec--contact .wrap.follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .wrap.slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .wrap.slide, .sec--contact .wrap.search-bar, .sec--contact .search-bar form.wrap, .search-bar .sec--contact form.wrap, .sec--contact .sec--benefits .wrap.card, .sec--benefits .sec--contact .wrap.card, .sec--contact .sec--sustainability .sustainability-wrapper article.wrap, .sec--sustainability .sustainability-wrapper .sec--contact article.wrap {
     width: 100%;
     flex-direction: row; }
-  .sec--contact .flex.align-center, .sec--contact .site-header .inner-wrap, .site-header .sec--contact .inner-wrap, .sec--contact .site-header .follow-us, .site-header .sec--contact .follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide, .sec--contact .search-bar, .sec--contact .search-bar form, .search-bar .sec--contact form, .sec--contact .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .sec--contact article, .sec--contact .sec--benefits .card, .sec--benefits .sec--contact .card, .sec--contact .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--contact article {
+  .sec--contact .flex.align-center, .sec--contact .wrapper .site-header .inner-wrap, .wrapper .site-header .sec--contact .inner-wrap, .sec--contact .site-header .follow-us, .site-header .sec--contact .follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide, .sec--contact .search-bar, .sec--contact .search-bar form, .search-bar .sec--contact form, .sec--contact .sec--benefits .card, .sec--benefits .sec--contact .card, .sec--contact .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--contact article {
     font-size: 14px;
     display: inline-flex; }
-    .sec--contact .flex.align-center img, .sec--contact .site-header .inner-wrap img, .site-header .sec--contact .inner-wrap img, .sec--contact .site-header .follow-us img, .site-header .sec--contact .follow-us img, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide img, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide img, .sec--contact .search-bar img, .sec--contact .search-bar form img, .search-bar .sec--contact form img, .sec--contact .sec--numbers .numbers-wrapper article img, .sec--numbers .numbers-wrapper .sec--contact article img, .sec--contact .sec--benefits .card img, .sec--benefits .sec--contact .card img, .sec--contact .sec--sustainability .sustainability-wrapper article img, .sec--sustainability .sustainability-wrapper .sec--contact article img {
+    .sec--contact .flex.align-center img, .sec--contact .wrapper .site-header .inner-wrap img, .wrapper .site-header .sec--contact .inner-wrap img, .sec--contact .site-header .follow-us img, .site-header .sec--contact .follow-us img, .sec--contact .owl-carousel.owl-theme.owl-solutions .slide img, .owl-carousel.owl-theme.owl-solutions .sec--contact .slide img, .sec--contact .search-bar img, .sec--contact .search-bar form img, .search-bar .sec--contact form img, .sec--contact .sec--benefits .card img, .sec--benefits .sec--contact .card img, .sec--contact .sec--sustainability .sustainability-wrapper article img, .sec--sustainability .sustainability-wrapper .sec--contact article img {
       margin-right: 10px; }
   .sec--contact .opening-hours {
     margin-right: 60px; }
@@ -1171,7 +1186,7 @@ a.btn-primary {
         width: auto; }
       .sec--contact .padding-0-mobile {
         padding: 0; }
-      .sec--contact .flex.wrap, .sec--contact .site-header .wrap.inner-wrap, .site-header .sec--contact .wrap.inner-wrap, .sec--contact .site-header .wrap.follow-us, .site-header .sec--contact .wrap.follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .wrap.slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .wrap.slide, .sec--contact .wrap.search-bar, .sec--contact .search-bar form.wrap, .search-bar .sec--contact form.wrap, .sec--contact .sec--numbers .numbers-wrapper article.wrap, .sec--numbers .numbers-wrapper .sec--contact article.wrap, .sec--contact .sec--benefits .wrap.card, .sec--benefits .sec--contact .wrap.card, .sec--contact .sec--sustainability .sustainability-wrapper article.wrap, .sec--sustainability .sustainability-wrapper .sec--contact article.wrap {
+      .sec--contact .flex.wrap, .sec--contact .wrapper .site-header .wrap.inner-wrap, .wrapper .site-header .sec--contact .wrap.inner-wrap, .sec--contact .site-header .wrap.follow-us, .site-header .sec--contact .wrap.follow-us, .sec--contact .owl-carousel.owl-theme.owl-solutions .wrap.slide, .owl-carousel.owl-theme.owl-solutions .sec--contact .wrap.slide, .sec--contact .wrap.search-bar, .sec--contact .search-bar form.wrap, .search-bar .sec--contact form.wrap, .sec--contact .sec--benefits .wrap.card, .sec--benefits .sec--contact .wrap.card, .sec--contact .sec--sustainability .sustainability-wrapper article.wrap, .sec--sustainability .sustainability-wrapper .sec--contact article.wrap {
         margin-top: 20px; }
       .sec--contact .card {
         padding: 60px 20px 130px;
@@ -1207,7 +1222,7 @@ a.btn-primary {
       font-family: 'gotham-black';
       border: none;
       width: 250px; }
-  .sec--newsletter .flex.align-center, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form, .sec--newsletter .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--newsletter article {
+  .sec--newsletter .flex.align-center, .sec--newsletter .wrapper .site-header .inner-wrap, .wrapper .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--newsletter article {
     height: 100%;
     padding: 25px 0; }
   @media only screen and (max-width: 60rem) {
@@ -1217,7 +1232,7 @@ a.btn-primary {
       .sec--newsletter form input[type="submit"] {
         width: 100%;
         margin: 6px; }
-    .sec--newsletter .flex.align-center, .sec--newsletter .site-header .inner-wrap, .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form, .sec--newsletter .sec--numbers .numbers-wrapper article, .sec--numbers .numbers-wrapper .sec--newsletter article, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--newsletter article {
+    .sec--newsletter .flex.align-center, .sec--newsletter .wrapper .site-header .inner-wrap, .wrapper .site-header .sec--newsletter .inner-wrap, .sec--newsletter .site-header .follow-us, .site-header .sec--newsletter .follow-us, .sec--newsletter .owl-carousel.owl-theme.owl-solutions .slide, .owl-carousel.owl-theme.owl-solutions .sec--newsletter .slide, .sec--newsletter .search-bar, .sec--newsletter .search-bar form, .search-bar .sec--newsletter form, .sec--newsletter .sec--benefits .card, .sec--benefits .sec--newsletter .card, .sec--newsletter .sec--sustainability .sustainability-wrapper article, .sec--sustainability .sustainability-wrapper .sec--newsletter article {
       flex-wrap: wrap; } }
 
 @media only screen and (max-width: 60rem) {
@@ -1450,7 +1465,8 @@ a.btn-primary {
 
 .page--sobre .sec--market .market-wrapper {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 67px; }
   .page--sobre .sec--market .market-wrapper figure {
     margin: 14px 9px; }
   .page--sobre .sec--market .market-wrapper figcaption {
@@ -1459,11 +1475,69 @@ a.btn-primary {
     color: #2D538A;
     margin-top: 14px; }
 
+.page--sobre .sec--team {
+  padding: 50px 0; }
+  .page--sobre .sec--team .sec-title {
+    margin-bottom: 67px; }
+  .page--sobre .sec--team img {
+    margin-bottom: 67px; }
+
+.page--sobre .sec--quote2 {
+  padding: 70px 0 50px;
+  background-color: #FFCB2A;
+  color: #2D538A;
+  font-family: 'gotham-black';
+  font-size: 30px; }
+  .page--sobre .sec--quote2 .quote {
+    position: relative; }
+    .page--sobre .sec--quote2 .quote:before {
+      content: close-quote;
+      position: absolute;
+      transform: rotate(180deg);
+      top: -60px;
+      font-size: 55px;
+      color: #2D538A;
+      line-height: 1; }
+
+.page--sobre .sec--mission-vision {
+  padding: 70px 0; }
+  .page--sobre .sec--mission-vision .mission-vision-wrapper article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .page--sobre .sec--mission-vision .mission-vision-wrapper article .sec-title {
+      font-size: 32px;
+      margin: 0; }
+    .page--sobre .sec--mission-vision .mission-vision-wrapper article div {
+      max-width: 232px;
+      margin-left: 30px;
+      color: #2D538A; }
+    .page--sobre .sec--mission-vision .mission-vision-wrapper article figure {
+      min-width: 60px;
+      max-height: 78px; }
+    .page--sobre .sec--mission-vision .mission-vision-wrapper article.sec-main-topics {
+      margin-top: 100px;
+      padding-bottom: 30px; }
+  .page--sobre .sec--mission-vision .values-wrapper article {
+    flex-basis: 50%;
+    margin-bottom: 50px; }
+    .page--sobre .sec--mission-vision .values-wrapper article .wrap-title {
+      font-family: 'gotham-black';
+      font-size: 24px;
+      color: #2D538A; }
+    .page--sobre .sec--mission-vision .values-wrapper article span {
+      font-size: 14px;
+      color: #707070; }
+
 @media only screen and (max-width: 40rem) {
+  .page--sobre .sec-title {
+    margin-top: 0; }
   .page--sobre .sec--main .sec-title {
     margin-top: 50px; }
   .page--sobre .sec--quote {
     font-size: 22px;
     text-align: center; }
   .page--sobre .sec--timeline .sec-title {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .page--sobre .sec--mission-vision .values-wrapper article {
+    flex-basis: initial; } }

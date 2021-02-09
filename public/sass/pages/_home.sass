@@ -69,23 +69,25 @@
 		background-image: url('../images/sec-ad-adereco.png')
 		background-repeat: repeat-x
 		background-position: bottom
-		.numbers-wrapper article
-			@extend .flex
-			@extend .align-center
+		.numbers-wrapper
+			align-items: flex-start
 			justify-content: flex-start
-			margin: 15px
-			min-height: 130px
-			align-items: end
-			.sec-title
-				font-size: 32px
-				margin-bottom: 0
-			div
-				max-width: 232px
-				margin-left: 30px
-				color: $blue
-			figure
-				max-width: 78px
-				max-height: 78px
+			article
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				margin: 15px
+				min-height: 130px
+				.sec-title
+					font-size: 32px
+					margin-bottom: 0
+				div
+					max-width: 232px
+					margin-left: 30px
+					color: $blue
+				figure
+					max-width: 78px
+					max-height: 78px
 	&--solutions
 		background: $blue
 		padding: 110px 0
