@@ -334,7 +334,22 @@ a.btn-primary
 	@media only screen and (max-width: 40rem)
 		flex-wrap: wrap
 		border-top: none
+		border-left: 2px solid $blue
 		justify-content: center
-		&:after,
-		article:before
-			content: none
+		position: relative
+		article
+			display: flex
+			justify-content: flex-start
+			flex-direction: column
+			position: relative
+			top: -45px
+			h2
+				margin-top: 0
+			&:before
+				top: 42px
+				left: -34px
+		&:after
+			position: absolute
+			top: initial
+			left: -10px
+			bottom: 0

@@ -810,10 +810,25 @@ a.btn-primary {
     .timeline-wrapper {
       flex-wrap: wrap;
       border-top: none;
-      justify-content: center; }
-      .timeline-wrapper:after,
-      .timeline-wrapper article:before {
-        content: none; } }
+      border-left: 2px solid #2D538A;
+      justify-content: center;
+      position: relative; }
+      .timeline-wrapper article {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: relative;
+        top: -45px; }
+        .timeline-wrapper article h2 {
+          margin-top: 0; }
+        .timeline-wrapper article:before {
+          top: 42px;
+          left: -34px; }
+      .timeline-wrapper:after {
+        position: absolute;
+        top: initial;
+        left: -10px;
+        bottom: 0; } }
 
 .sec--hero {
   padding-top: 100px; }
@@ -1534,10 +1549,12 @@ a.btn-primary {
     margin-top: 0; }
   .page--sobre .sec--main .sec-title {
     margin-top: 50px; }
+  .page--sobre .sec--market .market-wrapper figure {
+    width: 100%; }
+    .page--sobre .sec--market .market-wrapper figure img {
+      width: 100%; }
   .page--sobre .sec--quote {
     font-size: 22px;
     text-align: center; }
-  .page--sobre .sec--timeline .sec-title {
-    margin-bottom: 0; }
   .page--sobre .sec--mission-vision .values-wrapper article {
     flex-basis: initial; } }
