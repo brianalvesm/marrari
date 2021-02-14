@@ -1558,3 +1558,33 @@ a.btn-primary {
     text-align: center; }
   .page--sobre .sec--mission-vision .values-wrapper article {
     flex-basis: initial; } }
+
+.page--clientes .sec--main {
+  padding: 60px 0; }
+  .page--clientes .sec--main .sec-title {
+    font-size: 44px; }
+  .page--clientes .sec--main .clientes-logos-wrap {
+    padding: 60px 0; }
+    .page--clientes .sec--main .clientes-logos-wrap figure {
+      width: 240px;
+      height: 100px;
+      margin-bottom: 70px; }
+    .page--clientes .sec--main .clientes-logos-wrap img {
+      max-width: 200px;
+      max-height: 95px; }
+
+.page--clientes .sec--testimonials {
+  background-color: #f4f4f4;
+  padding: 70px 0 100px; }
+  .page--clientes .sec--testimonials .testimonial-author {
+    font-size: 18px;
+    font-family: 'gotham-black';
+    margin-bottom: 0;
+    color: #2D538A; }
+  .page--clientes .sec--testimonials img {
+    max-width: 180px;
+    max-height: 180px;
+    margin-right: 70px; }
+    @media only screen and (max-width: 60rem) {
+      .page--clientes .sec--testimonials img {
+        margin: 0 35px 35px 0; } }
