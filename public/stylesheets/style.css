@@ -97,6 +97,12 @@
   color: #2D538A;
   align-self: baseline; }
 
+.post-title {
+  font-family: 'gotham-black';
+  font-size: 24px;
+  color: #2D538A;
+  align-self: baseline; }
+
 .sec-title-description {
   align-self: baseline; }
 
@@ -1674,3 +1680,11 @@ a.btn-primary {
         margin-top: 20px; }
       .page--clientes .sec--cases .card .card-title {
         margin-top: 0; } }
+
+.page--blog .sec--main {
+  padding: 80px 0; }
+  .page--blog .sec--main .category-date-wrap {
+    font-family: 'gotham-black';
+    font-size: 14px;
+    color: #9F9C9C;
+    align-self: baseline; }
