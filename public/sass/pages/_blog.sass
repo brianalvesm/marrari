@@ -1,95 +1,114 @@
 // Blog
 .page--blog
-	.sec
-		&--main
-			padding: 80px 0
-			.post
-				margin: 0 20px 40px 0
-				max-width: 270px
-			.category-date-wrap
-				font-family: 'gotham-bold'
-				font-size: 14px
-				color: #9F9C9C
-				align-self: baseline
-				text-transform: uppercase
-				margin: 25px 0
-			.blog-pagination a
-				font-family: 'gotham-bold'
-				font-size: 16px
-				width: 50px
-				height: 50px
-				margin: 0 8px
-				border-radius: 50%
-				border: 1px solid $blue
+	.sec--main
+		padding: 80px 0
+		.post
+			margin: 0 20px 40px 0
+			max-width: 270px
+		.category-date-wrap
+			font-family: 'gotham-bold'
+			font-size: 14px
+			color: #9F9C9C
+			align-self: baseline
+			text-transform: uppercase
+			margin: 25px 0
+		.blog-pagination a
+			font-family: 'gotham-bold'
+			font-size: 16px
+			width: 50px
+			height: 50px
+			margin: 0 8px
+			border-radius: 50%
+			border: 1px solid $blue
+			color: $blue
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			&.active
+				border: 1px solid $yellow
+				background-color: $yellow
+		// SIDEBAR
+		.sidebar
+			input[type="search"]
+				height: 60px
+				border-radius: 5px
+				border-color: #c7c7c7
+				background-image: url('../images/icon-search.png')
+				background-position: 15px center
+				padding-left: 50px
+				&::placeholder
+					font-size: 15px
+					color: $blue
+			// SECTIONS
+			.categories,
+			.main-posts,
+			.tags
+				margin: 65px 0
+			// TITLES
+			.categories-title,
+			.main-posts-title,
+			.tags-title
+				font-family: 'gotham-black'
+				font-size: 15px
 				color: $blue
-				display: inline-flex
-				align-items: center
-				justify-content: center
+				margin-bottom: 40px
+			// Section - Categories
+			.categories-nav a
+				font-family: 'gotham-black'
+				font-size: 13px
+				color: $blue
+				margin: 0 0 15px 50px
+				display: block
+				text-transform: uppercase
+				position: relative
+				&:before
+					position: absolute
+					left: -25px
+					content: ""
+					background-image: url('../images/icon-arrow-right.png')
+					background-position: center
+					display: block
+					width: 6px
+					height: 12px 
 				&.active
-					border: 1px solid $yellow
-					background-color: $yellow
+					color: $yellow
+			// Section - Main Posts
+			.main-post
+				align-items: flex-start
+				margin-bottom: 18px
+				img
+					margin-right: 15px
+				.post-title
+					font-size: 14px
+				.post-date
+					font-family: 'gotham-bold'
+					font-size: 12px
+					color: #9F9C9C
+			// Section - Tags
+			.tag
+				color: white
+				background-color: $blue
+				font-family: 'gotham-black'
+				font-size: 13px
+				padding: 7px 26px 9px
+				margin: 9px 7px
+		@media only screen and (max-width: 40rem) // 640px
+			.post
+				margin: 0 0 40px
+				max-width: initial
+				width: 100%
+				img
+					width: 100%
 			// SIDEBAR
 			.sidebar
-				input[type="search"]
-					height: 60px
-					border-radius: 5px
-					border-color: #c7c7c7
-					background-image: url('../images/icon-search.png')
-					background-position: 15px center
-					padding-left: 50px
-					&::placeholder
-						font-size: 15px
-						color: $blue
+				margin-top: 80px
 				// SECTIONS
 				.categories,
 				.main-posts,
 				.tags
-					margin: 65px 0
+					margin: 30px 0
 				// TITLES
 				.categories-title,
 				.main-posts-title,
 				.tags-title
-					font-family: 'gotham-black'
-					font-size: 15px
-					color: $blue
-					margin-bottom: 40px
-				// Section - Categories
-				.categories-nav a
-					font-family: 'gotham-black'
-					font-size: 13px
-					color: $blue
-					margin: 0 0 15px 50px
-					display: block
-					text-transform: uppercase
-					position: relative
-					&:before
-						position: absolute
-						left: -25px
-						content: ""
-						background-image: url('../images/icon-arrow-right.png')
-						background-position: center
-						display: block
-						width: 6px
-						height: 12px 
-					&.active
-						color: $yellow
-				// Section - Main Posts
-				.main-post
-					align-items: flex-start
-					margin-bottom: 18px
-					img
-						margin-right: 15px
-					.post-title
-						font-size: 14px
-					.post-date
-						font-family: 'gotham-bold'
-						font-size: 12px
-						color: #9F9C9C
-				// Section - Tags
-				.tag
-					color: white
-					background-color: $blue
-					font-family: 'gotham-black'
-					font-size: 13px
-					padding: 7px 26px 9px
-					margin: 9px 7px
+					margin-bottom: 20px
