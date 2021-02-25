@@ -1783,3 +1783,44 @@ a.btn-primary {
       .page--blog .sec--main .sidebar .main-posts-title,
       .page--blog .sec--main .sidebar .tags-title {
         margin-bottom: 20px; } }
+
+.page--blog-post .sec--main {
+  padding: 80px 0;
+  font-size: 14px; }
+  .page--blog-post .sec--main .post-date {
+    font-family: 'gotham-black';
+    font-size: 11px;
+    color: #C7C7C7; }
+  .page--blog-post .sec--main .post-wrap {
+    padding-top: 48px;
+    margin: 0 40px;
+    position: relative;
+    top: -90px;
+    background-color: white;
+    display: block;
+    text-align: center; }
+    .page--blog-post .sec--main .post-wrap article {
+      text-align: left;
+      margin-top: 60px; }
+      .page--blog-post .sec--main .post-wrap article .post-imgs {
+        padding: 70px 0; }
+        .page--blog-post .sec--main .post-wrap article .post-imgs img:last-child {
+          margin-top: 50px; }
+  .page--blog-post .sec--main .post-list {
+    list-style: none;
+    margin: 50px 0 50px 90px; }
+    .page--blog-post .sec--main .post-list li {
+      position: relative;
+      margin-bottom: 28px;
+      color: #2D538A; }
+      .page--blog-post .sec--main .post-list li:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #2D538A;
+        position: absolute;
+        left: -43px;
+        top: 5px; }
+  .page--blog-post .sec--main .paragraph {
+    margin-bottom: 30px; }
