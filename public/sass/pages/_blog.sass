@@ -154,3 +154,51 @@
 					top: 5px
 		.paragraph
 			margin-bottom: 30px
+		.share
+			margin: 64px 0
+			span
+				color: $blue
+		.social-media
+			figure
+				display: inline-block
+				padding: 12px 20px
+				border-radius: 25px
+				border: 1px solid #BABABA
+				margin: 28px 5px
+				&:nth-child(2)
+					background-color: #3B5998
+					padding: 12px 30px
+		.tags
+			font-family: 'gotham-bold'
+			font-size: 16px
+			color: $blue
+		.author
+			padding: 20px 0
+			border-top: 1px solid #BABABA
+			border-bottom: 1px solid #BABABA
+			figure
+				margin: 0 32px
+				min-width: 93px
+			.author-name
+				font-family: 'gotham-black'
+				font-size: 17px
+				color: $blue
+			.author-bio
+				font-family: 'gotham-bold'
+				font-size: 14px
+				color: #7E7E7E
+				display: block
+				text-align: left
+		@media only screen and (max-width: 40rem) // 640px
+			.author
+				flex-wrap: wrap
+				flex-direction: columns
+				div
+					justify-content: center
+				figure
+					margin: 0 auto 20px
+				.author-bio
+					text-align: center
+			.post-wrap
+				margin: 0
+				top: 0
