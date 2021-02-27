@@ -487,6 +487,10 @@ a.btn-primary {
   font-family: 'gotham-black';
   line-height: normal;
   text-align: center; }
+  .btn-primary.gradient,
+  a.btn-primary.gradient {
+    background: #ffe160;
+    background: linear-gradient(0deg, #ffe160 0%, #ffcb2a 100%); }
 
 .owl-hero .item {
   background-position: center; }
@@ -1876,3 +1880,87 @@ a.btn-primary {
     .page--blog-post .sec--main .post-wrap {
       margin: 0;
       top: 0; } }
+
+.page--cursos .sec {
+  padding: 90px 0; }
+  .page--cursos .sec .sec-title {
+    margin-bottom: 40px; }
+  .page--cursos .sec select {
+    width: 200px;
+    height: 54px;
+    border: 1px solid #E6E5E5;
+    border-radius: 5px;
+    padding: 16px;
+    font-size: 14px;
+    color: #2D538A;
+    appearance: none;
+    outline: none;
+    background-image: url("../images/icon-arrow-down-2.png");
+    background-position: right 0px center;
+    background-size: 21px 11px; }
+  .page--cursos .sec .btn-primary {
+    width: 378px;
+    margin-top: 60px; }
+  .page--cursos .sec--prox-cursos .card, .page--cursos .sec--prox-eventos .card {
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #D1DBE3;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    flex-direction: row; }
+    .page--cursos .sec--prox-cursos .card figure, .page--cursos .sec--prox-eventos .card figure {
+      margin-right: 30px;
+      border-radius: 5px; }
+    .page--cursos .sec--prox-cursos .card span, .page--cursos .sec--prox-eventos .card span {
+      font-size: 14px;
+      font-family: 'gotham-medium';
+      color: #707070; }
+    .page--cursos .sec--prox-cursos .card .card-title, .page--cursos .sec--prox-eventos .card .card-title {
+      font-size: 18px;
+      font-family: 'gotham-black';
+      color: #2D538A;
+      margin: 22px 0; }
+    .page--cursos .sec--prox-cursos .card .card-description, .page--cursos .sec--prox-eventos .card .card-description {
+      font-size: 14px;
+      font-family: 'gotham-book';
+      color: #707070; }
+  .page--cursos .sec--prox-cursos .sec-categories, .page--cursos .sec--prox-eventos .sec-categories {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'gotham-book';
+    font-size: 18px; }
+  .page--cursos .sec .post {
+    margin: 0 40px 40px 0;
+    max-width: 270px; }
+  .page--cursos .sec .category-date-wrap {
+    font-family: 'gotham-bold';
+    font-size: 14px;
+    color: #9F9C9C;
+    align-self: baseline;
+    text-transform: uppercase;
+    margin: 25px 0; }
+  @media only screen and (max-width: 60rem) {
+    .page--cursos .sec .flex.space-between, .page--cursos .sec .wrapper .site-header .space-between.inner-wrap, .wrapper .site-header .page--cursos .sec .space-between.inner-wrap, .page--cursos .sec .site-header .space-between.follow-us, .site-header .page--cursos .sec .space-between.follow-us, .page--cursos .sec .owl-carousel.owl-theme.owl-solutions .space-between.slide, .owl-carousel.owl-theme.owl-solutions .page--cursos .sec .space-between.slide, .page--cursos .sec .space-between.search-bar, .page--cursos .sec .search-bar form.space-between, .search-bar .page--cursos .sec form.space-between, .page--cursos .sec .sec--benefits .space-between.card, .sec--benefits .page--cursos .sec .space-between.card, .page--cursos .sec .sec--sustainability .sustainability-wrapper article.space-between, .sec--sustainability .sustainability-wrapper .page--cursos .sec article.space-between {
+      flex-direction: column; }
+    .page--cursos .sec .card {
+      flex-direction: column; }
+      .page--cursos .sec .card figure {
+        width: 100%;
+        overflow: hidden;
+        margin-right: initial; }
+        .page--cursos .sec .card figure img {
+          margin: auto;
+          width: 100%; }
+      .page--cursos .sec .card div {
+        margin-top: 20px; }
+      .page--cursos .sec .card .card-title {
+        margin-top: 0; }
+    .page--cursos .sec .btn-primary {
+      width: 100%;
+      margin-top: 30px; }
+    .page--cursos .sec .post {
+      margin: 0 0 40px;
+      max-width: initial;
+      width: 100%; }
+      .page--cursos .sec .post img {
+        width: 100%; } }

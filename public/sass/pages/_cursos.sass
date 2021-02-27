@@ -1,0 +1,87 @@
+// CURSOS
+.page--cursos
+	.sec
+		padding: 90px 0
+		.sec-title
+			margin-bottom: 40px
+		select
+			width: 200px
+			height: 54px
+			border: 1px solid #E6E5E5
+			border-radius: 5px
+			padding: 16px
+			font-size: 14px
+			color: $blue
+			appearance: none
+			outline: none
+			background-image: url('../images/icon-arrow-down-2.png')
+			background-position: right 0px center
+			background-size: 21px 11px
+		.btn-primary
+			width: 378px
+			margin-top: 60px
+		&--prox-cursos,
+		&--prox-eventos,
+			.card
+				padding: 12px
+				background-color: white
+				border: 1px solid #D1DBE3
+				margin-bottom: 17px
+				border-radius: 5px
+				flex-direction: row
+				figure
+					margin-right: 30px
+					border-radius: 5px
+				span
+					font-size: 14px
+					font-family: 'gotham-medium'
+					color: #707070
+				.card-title
+					font-size: 18px
+					font-family: 'gotham-black'
+					color: $blue
+					margin: 22px 0
+				.card-description
+					font-size: 14px
+					font-family: 'gotham-book'
+					color: #707070
+			.sec-categories
+				display: block
+				margin-bottom: 20px
+				font-family: 'gotham-book'
+				font-size: 18px
+		.post
+			margin: 0 40px 40px 0
+			max-width: 270px
+		.category-date-wrap
+			font-family: 'gotham-bold'
+			font-size: 14px
+			color: #9F9C9C
+			align-self: baseline
+			text-transform: uppercase
+			margin: 25px 0
+		@media only screen and (max-width: 60rem)
+			.flex.space-between
+				flex-direction: column
+			.card
+				flex-direction: column
+				figure
+					width: 100%
+					overflow: hidden
+					margin-right: initial
+					img
+						margin: auto
+						width: 100%
+				div
+					margin-top: 20px
+				.card-title
+					margin-top: 0
+			.btn-primary
+				width: 100%
+				margin-top: 30px
+			.post
+				margin: 0 0 40px
+				max-width: initial
+				width: 100%
+				img
+					width: 100%
