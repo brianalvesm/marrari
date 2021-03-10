@@ -185,6 +185,10 @@ a:hover {
 .wrapper .fullHeight {
   height: 100%; }
 
+@media only screen and (max-width: 60rem) {
+  .direction-column-mobile {
+    flex-direction: column; } }
+
 @font-face {
   font-family: 'gotham-black';
   src: url("../fonts/gotham/gotham-black-webfont.woff2") format("woff2"), url("../fonts/gotham/gotham-black-webfont.woff") format("woff");
@@ -1964,3 +1968,43 @@ a.btn-primary {
       width: 100%; }
       .page--cursos .sec .post img {
         width: 100%; } }
+
+.page--contato .sec-title {
+  font-size: 44px;
+  max-width: 970px; }
+  @media only screen and (max-width: 60rem) {
+    .page--contato .sec-title {
+      font-size: 28px; } }
+
+.page--contato .paragraph {
+  color: #939598;
+  font-weight: 900; }
+  .page--contato .paragraph a {
+    color: #2D538A;
+    text-decoration: underline; }
+
+.page--contato .sec--contact {
+  background-color: initial; }
+  .page--contato .sec--contact:before {
+    content: none; }
+  .page--contato .sec--contact .card {
+    box-shadow: rgba(101, 101, 101, 0.15) 0 0 18px; }
+
+.page--contato .sec--map iframe {
+  width: 100%; }
+
+@media only screen and (max-width: 60rem) {
+  .page--contato .sec--map {
+    padding: 0 !important; } }
+
+.page--contato .sec--contacts {
+  background-color: #FFCB2A;
+  padding: 30px 0 40px; }
+  .page--contato .sec--contacts .contato figure {
+    height: 45px;
+    margin-bottom: 16px; }
+  @media only screen and (max-width: 60rem) {
+    .page--contato .sec--contacts .contato {
+      margin-bottom: 40px; }
+      .page--contato .sec--contacts .contato:last-child {
+        margin-bottom: 0; } }

@@ -1,0 +1,35 @@
+// CONTATO
+.page--contato
+	.sec-title
+		font-size: 44px
+		max-width: 970px
+		@media only screen and (max-width: 60rem)
+			font-size: 28px
+	.paragraph
+		color: #939598
+		font-weight: 900
+		a
+			color: $blue
+			text-decoration: underline
+	.sec--contact
+		background-color: initial
+		&:before
+			content: none
+		.card
+			box-shadow: rgba(101,101,101,0.15) 0 0 18px
+	.sec--map
+		iframe
+			width: 100%
+		@media only screen and (max-width: 60rem)
+			padding: 0 !important
+	.sec--contacts
+		background-color: $yellow
+		padding: 30px 0 40px
+		.contato
+			figure
+				height: 45px
+				margin-bottom: 16px
+			@media only screen and (max-width: 60rem)
+				margin-bottom: 40px
+				&:last-child
+					margin-bottom: 0
